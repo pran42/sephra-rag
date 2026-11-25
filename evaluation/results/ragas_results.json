@@ -1,0 +1,110 @@
+{
+  "retrieval": {
+    "baseline_original": {
+      "product_context_precision": 0.65,
+      "product_context_precision_strict": 0.62,
+      "named_product_context_precision": 0.3,
+      "named_product_context_recall": 1.0
+    },
+    "dense": {
+      "product_context_precision": 1.0,
+      "product_context_precision_strict": 0.84,
+      "named_product_context_precision": 1.0,
+      "named_product_context_recall": 1.0
+    },
+    "hybrid": {
+      "product_context_precision": 1.0,
+      "product_context_precision_strict": 0.86,
+      "named_product_context_precision": 1.0,
+      "named_product_context_recall": 1.0,
+      "review_attribution_precision": 1.0,
+      "reviews_checked": 86
+    }
+  },
+  "generation": {
+    "samples": 13,
+    "faithfulness": 0.9897,
+    "answer_relevancy": 0.8782,
+    "scored_faithfulness": 8,
+    "scored_answer_relevancy": 7,
+    "judge": "baidu/ernie-5.5-flash-preview:free",
+    "per_sample": [
+      {
+        "id": "Q01",
+        "faithfulness": 0.9818181818181818,
+        "answer_relevancy": 0.9282439599401009
+      },
+      {
+        "id": "Q02",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.8725822409469662
+      },
+      {
+        "id": "Q03",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.917687845252163
+      },
+      {
+        "id": "Q04",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9265620598643286
+      },
+      {
+        "id": "Q05",
+        "faithfulness": 0.9620253164556962,
+        "answer_relevancy": 0.8418902851465733
+      },
+      {
+        "id": "Q06",
+        "faithfulness": 0.974025974025974,
+        "answer_relevancy": 0.7930294760437163
+      },
+      {
+        "id": "Q07",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.8672603210931165
+      },
+      {
+        "id": "Q08",
+        "faithfulness": 1.0,
+        "answer_relevancy": null,
+        "answer_relevancy_error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free mo"
+      },
+      {
+        "id": "Q09",
+        "faithfulness": null,
+        "faithfulness_error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free mo",
+        "answer_relevancy": null,
+        "answer_relevancy_error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free mo"
+      },
+      {
+        "id": "Q11",
+        "faithfulness": null,
+        "faithfulness_error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free mo",
+        "answer_relevancy": null,
+        "answer_relevancy_error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free mo"
+      },
+      {
+        "id": "Q12",
+        "faithfulness": null,
+        "faithfulness_error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free mo",
+        "answer_relevancy": null,
+        "answer_relevancy_error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free mo"
+      },
+      {
+        "id": "Q13",
+        "faithfulness": null,
+        "faithfulness_error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free mo",
+        "answer_relevancy": null,
+        "answer_relevancy_error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free mo"
+      },
+      {
+        "id": "Q14",
+        "faithfulness": null,
+        "faithfulness_error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free mo",
+        "answer_relevancy": null,
+        "answer_relevancy_error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free mo"
+      }
+    ]
+  }
+}

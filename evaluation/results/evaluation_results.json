@@ -1,0 +1,2926 @@
+{
+  "summary": {
+    "baseline_original": {
+      "P@5": 0.65,
+      "strictP@5": 0.3875,
+      "MRR": 0.7708333333333334,
+      "nDCG@5": 0.607088317874456,
+      "strictP@5_graded_only": 0.62,
+      "special_cases_correct": 0.0,
+      "special_cases_total": 3,
+      "hard_filter_violations": 33,
+      "duplicate_products": 0,
+      "duplicate_families": 4,
+      "misattributed_reviews": 0,
+      "zero_review_without_note": 0,
+      "products_with_critical_available": 17,
+      "critical_shown": 4,
+      "products_returned": 100,
+      "latency_mean_s": 0.12175,
+      "latency_p95_s": 0.259
+    },
+    "dense": {
+      "P@5": 1.0,
+      "strictP@5": 0.525,
+      "MRR": 1.0,
+      "nDCG@5": 0.9532636048703838,
+      "cappedRecall@50": 0.903125,
+      "strictP@5_graded_only": 0.8400000000000001,
+      "special_cases_correct": 3.0,
+      "special_cases_total": 3,
+      "hard_filter_violations": 0,
+      "duplicate_products": 0,
+      "duplicate_families": 0,
+      "misattributed_reviews": 0,
+      "zero_review_without_note": 0,
+      "products_with_critical_available": 18,
+      "critical_shown": 18,
+      "products_returned": 88,
+      "latency_mean_s": 0.24544384499895386,
+      "latency_p95_s": 0.8432888999814168
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "strictP@5": 0.5375,
+      "MRR": 1.0,
+      "nDCG@5": 0.9598209996624772,
+      "cappedRecall@50": 0.926875,
+      "strictP@5_graded_only": 0.86,
+      "special_cases_correct": 3.0,
+      "special_cases_total": 3,
+      "hard_filter_violations": 0,
+      "duplicate_products": 0,
+      "duplicate_families": 0,
+      "misattributed_reviews": 0,
+      "zero_review_without_note": 0,
+      "products_with_critical_available": 18,
+      "critical_shown": 18,
+      "products_returned": 88,
+      "latency_mean_s": 0.11884467000490986,
+      "latency_p95_s": 0.3302281000651419
+    },
+    "hybrid_rerank_minilm": {
+      "P@5": 1.0,
+      "strictP@5": 0.5125,
+      "MRR": 1.0,
+      "nDCG@5": 0.9432197646749064,
+      "cappedRecall@50": 0.934375,
+      "strictP@5_graded_only": 0.82,
+      "special_cases_correct": 3.0,
+      "special_cases_total": 3,
+      "hard_filter_violations": 0,
+      "duplicate_products": 0,
+      "duplicate_families": 0,
+      "misattributed_reviews": 0,
+      "zero_review_without_note": 0,
+      "products_with_critical_available": 17,
+      "critical_shown": 17,
+      "products_returned": 88,
+      "latency_mean_s": 1.7871102699893526,
+      "latency_p95_s": 2.6629681999329478
+    },
+    "hybrid_rerank_bge-base": {
+      "P@5": 1.0,
+      "strictP@5": 0.525,
+      "MRR": 1.0,
+      "nDCG@5": 0.9609119490799404,
+      "cappedRecall@50": 0.934375,
+      "strictP@5_graded_only": 0.8400000000000001,
+      "special_cases_correct": 3.0,
+      "special_cases_total": 3,
+      "hard_filter_violations": 0,
+      "duplicate_products": 0,
+      "duplicate_families": 0,
+      "misattributed_reviews": 0,
+      "zero_review_without_note": 0,
+      "products_with_critical_available": 20,
+      "critical_shown": 20,
+      "products_returned": 88,
+      "latency_mean_s": 9.71709620000911,
+      "latency_p95_s": 14.392100099939853
+    }
+  },
+  "relevant_counts": {
+    "Q01": {
+      "relevant": 50,
+      "highly_relevant": 22
+    },
+    "Q02": {
+      "relevant": 284,
+      "highly_relevant": 0
+    },
+    "Q03": {
+      "relevant": 119,
+      "highly_relevant": 49
+    },
+    "Q04": {
+      "relevant": 15,
+      "highly_relevant": 0
+    },
+    "Q05": {
+      "relevant": 164,
+      "highly_relevant": 46
+    },
+    "Q06": {
+      "relevant": 990,
+      "highly_relevant": 0
+    },
+    "Q07": {
+      "relevant": 38,
+      "highly_relevant": 0
+    },
+    "Q08": {
+      "relevant": 24,
+      "highly_relevant": 3
+    },
+    "Q11": {
+      "relevant": 39,
+      "highly_relevant": 0
+    },
+    "Q12": {
+      "relevant": 144,
+      "highly_relevant": 70
+    },
+    "Q15": {
+      "relevant": 215,
+      "highly_relevant": 83
+    },
+    "Q16": {
+      "relevant": 47,
+      "highly_relevant": 0
+    },
+    "Q17": {
+      "relevant": 65,
+      "highly_relevant": 40
+    },
+    "Q18": {
+      "relevant": 197,
+      "highly_relevant": 88
+    },
+    "Q19": {
+      "relevant": 117,
+      "highly_relevant": 53
+    },
+    "Q20": {
+      "relevant": 71,
+      "highly_relevant": 5
+    }
+  },
+  "per_query": {
+    "baseline_original": [
+      {
+        "query_id": "Q01",
+        "query_type": "dry_skin_budget",
+        "status": "ok",
+        "returned_ids": [
+          "P411403",
+          "P500094",
+          "P427641",
+          "P441101",
+          "P500120"
+        ],
+        "metrics": {
+          "P@5": 0.8,
+          "strictP@5": 0.8,
+          "MRR": 1.0,
+          "nDCG@5": 0.8539316501572936
+        },
+        "checks": {
+          "hard_filter_violations": 1,
+          "duplicate_products": 0,
+          "duplicate_families": 1,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 2,
+          "critical_shown": 1
+        },
+        "latency_s": 0.187
+      },
+      {
+        "query_id": "Q02",
+        "query_type": "fragrance_free",
+        "status": "ok",
+        "returned_ids": [
+          "P483069",
+          "P478523",
+          "P482659",
+          "P501963",
+          "P483653"
+        ],
+        "metrics": {
+          "P@5": 0.0,
+          "strictP@5": 0.0,
+          "MRR": 0.0,
+          "nDCG@5": 0.0
+        },
+        "checks": {
+          "hard_filter_violations": 5,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.07
+      },
+      {
+        "query_id": "Q03",
+        "query_type": "oily_lightweight",
+        "status": "ok",
+        "returned_ids": [
+          "P476516",
+          "P476430",
+          "P504810",
+          "P504784",
+          "P500094"
+        ],
+        "metrics": {
+          "P@5": 0.6,
+          "strictP@5": 0.4,
+          "MRR": 0.3333333333333333,
+          "nDCG@5": 0.3593834783169618
+        },
+        "checks": {
+          "hard_filter_violations": 2,
+          "duplicate_products": 0,
+          "duplicate_families": 1,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 0
+        },
+        "latency_s": 0.207
+      },
+      {
+        "query_id": "Q04",
+        "query_type": "sunscreen_budget",
+        "status": "ok",
+        "returned_ids": [
+          "P500993",
+          "P482321",
+          "P482061",
+          "P454391",
+          "P415965"
+        ],
+        "metrics": {
+          "P@5": 0.6,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 0.6992148198508501
+        },
+        "checks": {
+          "hard_filter_violations": 2,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "latency_s": 0.136
+      },
+      {
+        "query_id": "Q05",
+        "query_type": "highly_rated_shampoo",
+        "status": "ok",
+        "returned_ids": [
+          "P461610",
+          "P448733",
+          "P481735",
+          "P461611",
+          "P403934"
+        ],
+        "metrics": {
+          "P@5": 0.8,
+          "strictP@5": 0.8,
+          "MRR": 1.0,
+          "nDCG@5": 0.8539316501572936
+        },
+        "checks": {
+          "hard_filter_violations": 1,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.061
+      },
+      {
+        "query_id": "Q06",
+        "query_type": "perfume_everyday",
+        "status": "ok",
+        "returned_ids": [
+          "P479499",
+          "P479498",
+          "P479731",
+          "P501252",
+          "P428677"
+        ],
+        "metrics": {
+          "P@5": 0.6,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 0.6992148198508501
+        },
+        "checks": {
+          "hard_filter_violations": 2,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.055
+      },
+      {
+        "query_id": "Q07",
+        "query_type": "brand",
+        "status": "ok",
+        "returned_ids": [
+          "P471761",
+          "P501591",
+          "P454120",
+          "P426836",
+          "P505120"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 2,
+          "critical_shown": 0
+        },
+        "latency_s": 0.254
+      },
+      {
+        "query_id": "Q08",
+        "query_type": "zero_review_products",
+        "status": "ok",
+        "returned_ids": [
+          "P500094",
+          "P474858",
+          "P422430",
+          "P479125",
+          "P427641"
+        ],
+        "metrics": {
+          "P@5": 0.4,
+          "strictP@5": 0.4,
+          "MRR": 1.0,
+          "nDCG@5": 0.5952621370614727
+        },
+        "checks": {
+          "hard_filter_violations": 3,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "latency_s": 0.123
+      },
+      {
+        "query_id": "Q09",
+        "query_type": "mixed_reviews",
+        "status": "ok",
+        "returned_ids": [
+          "P379709",
+          "P472341",
+          "P392001",
+          "P458917",
+          "P412407"
+        ],
+        "metrics": {
+          "correct_outcome": 0.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 3,
+          "critical_shown": 0
+        },
+        "latency_s": 0.259
+      },
+      {
+        "query_id": "Q10",
+        "query_type": "no_match",
+        "status": "ok",
+        "returned_ids": [
+          "P441101",
+          "P481168",
+          "P417867",
+          "P480355",
+          "P418218"
+        ],
+        "metrics": {
+          "correct_outcome": 0.0
+        },
+        "checks": {
+          "hard_filter_violations": 5,
+          "duplicate_products": 0,
+          "duplicate_families": 1,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.119
+      },
+      {
+        "query_id": "Q11",
+        "query_type": "strict_price",
+        "status": "ok",
+        "returned_ids": [
+          "P309504",
+          "P455657",
+          "P504068",
+          "P376090",
+          "P417913"
+        ],
+        "metrics": {
+          "P@5": 0.0,
+          "strictP@5": 0.0,
+          "MRR": 0.0,
+          "nDCG@5": 0.0
+        },
+        "checks": {
+          "hard_filter_violations": 5,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.059
+      },
+      {
+        "query_id": "Q12",
+        "query_type": "no_budget",
+        "status": "ok",
+        "returned_ids": [
+          "P455235",
+          "P467614",
+          "P418346",
+          "P476428",
+          "P500756"
+        ],
+        "metrics": {
+          "P@5": 0.8,
+          "strictP@5": 0.8,
+          "MRR": 0.5,
+          "nDCG@5": 0.660839794726384
+        },
+        "checks": {
+          "hard_filter_violations": 1,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 0
+        },
+        "latency_s": 0.123
+      },
+      {
+        "query_id": "Q13",
+        "query_type": "ambiguous",
+        "status": "ok",
+        "returned_ids": [
+          "P503634",
+          "P504171",
+          "P433173",
+          "P470529",
+          "P503902"
+        ],
+        "metrics": {},
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.05
+      },
+      {
+        "query_id": "Q14",
+        "query_type": "comparison",
+        "status": "ok",
+        "returned_ids": [
+          "P379709",
+          "P429637",
+          "P480613",
+          "P430405",
+          "P472341"
+        ],
+        "metrics": {
+          "correct_outcome": 0.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 4,
+          "critical_shown": 1
+        },
+        "latency_s": 0.289
+      },
+      {
+        "query_id": "Q15",
+        "query_type": "ingredient",
+        "status": "ok",
+        "returned_ids": [
+          "P443845",
+          "P500746",
+          "P427419",
+          "P447212",
+          "P471025"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 0
+        },
+        "latency_s": 0.099
+      },
+      {
+        "query_id": "Q16",
+        "query_type": "extra_retrieval",
+        "status": "ok",
+        "returned_ids": [
+          "P482077",
+          "P472179",
+          "P500474",
+          "P456014",
+          "P468423"
+        ],
+        "metrics": {
+          "P@5": 0.4,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 0.5531464700081437
+        },
+        "checks": {
+          "hard_filter_violations": 3,
+          "duplicate_products": 0,
+          "duplicate_families": 1,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.061
+      },
+      {
+        "query_id": "Q17",
+        "query_type": "extra_retrieval",
+        "status": "ok",
+        "returned_ids": [
+          "P474027",
+          "P479990",
+          "P448864",
+          "P500310",
+          "P448445"
+        ],
+        "metrics": {
+          "P@5": 0.4,
+          "strictP@5": 0.4,
+          "MRR": 0.5,
+          "nDCG@5": 0.34519134224686937
+        },
+        "checks": {
+          "hard_filter_violations": 3,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.057
+      },
+      {
+        "query_id": "Q18",
+        "query_type": "extra_retrieval",
+        "status": "ok",
+        "returned_ids": [
+          "P456217",
+          "P476750",
+          "P469450",
+          "P459138",
+          "P474829"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.8,
+          "MRR": 1.0,
+          "nDCG@5": 0.8573424901769817
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.048
+      },
+      {
+        "query_id": "Q19",
+        "query_type": "extra_retrieval",
+        "status": "ok",
+        "returned_ids": [
+          "P409317",
+          "P454512",
+          "P407636",
+          "P460716",
+          "P500992"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.8,
+          "MRR": 1.0,
+          "nDCG@5": 0.9026211001048624
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.058
+      },
+      {
+        "query_id": "Q20",
+        "query_type": "extra_retrieval",
+        "status": "ok",
+        "returned_ids": [
+          "P296413",
+          "P450633",
+          "P427536",
+          "P232902",
+          "P469448"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 0.33333333333333337
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 0
+        },
+        "latency_s": 0.12
+      }
+    ],
+    "dense": [
+      {
+        "query_id": "Q01",
+        "query_type": "dry_skin_budget",
+        "status": "ok",
+        "returned_ids": [
+          "P500094",
+          "P411403",
+          "P500120",
+          "P438617",
+          "P482694"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 2,
+          "critical_shown": 2
+        },
+        "latency_s": 0.25829699996393174
+      },
+      {
+        "query_id": "Q02",
+        "query_type": "fragrance_free",
+        "status": "ok",
+        "returned_ids": [
+          "P479734",
+          "P470040",
+          "P481062",
+          "P469520",
+          "P502169"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 2,
+          "critical_shown": 2
+        },
+        "latency_s": 1.120453399955295
+      },
+      {
+        "query_id": "Q03",
+        "query_type": "oily_lightweight",
+        "status": "ok",
+        "returned_ids": [
+          "P504810",
+          "P504784",
+          "P482695",
+          "P422648",
+          "P500094"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.8,
+          "MRR": 1.0,
+          "nDCG@5": 0.9125299483251055,
+          "cappedRecall@50": 0.52
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 2,
+          "critical_shown": 2
+        },
+        "latency_s": 0.3453290000325069
+      },
+      {
+        "query_id": "Q04",
+        "query_type": "sunscreen_budget",
+        "status": "ok",
+        "returned_ids": [
+          "P500993",
+          "P504778",
+          "P479646",
+          "P482320",
+          "P454389"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "latency_s": 0.16025930002797395
+      },
+      {
+        "query_id": "Q05",
+        "query_type": "highly_rated_shampoo",
+        "status": "ok",
+        "returned_ids": [
+          "P461610",
+          "P403934",
+          "P481735",
+          "P448733",
+          "P501714"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.107475999975577
+      },
+      {
+        "query_id": "Q06",
+        "query_type": "perfume_everyday",
+        "status": "ok",
+        "returned_ids": [
+          "P479499",
+          "P479498",
+          "P501252",
+          "P501291",
+          "P501800"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.1610458999639377
+      },
+      {
+        "query_id": "Q07",
+        "query_type": "brand",
+        "status": "ok",
+        "returned_ids": [
+          "P471761",
+          "P501591",
+          "P454120",
+          "P465752",
+          "P392246"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 2,
+          "critical_shown": 2
+        },
+        "latency_s": 0.8432888999814168
+      },
+      {
+        "query_id": "Q08",
+        "query_type": "zero_review_products",
+        "status": "ok",
+        "returned_ids": [
+          "P500094",
+          "P479125",
+          "P469517",
+          "P480166",
+          "P440493"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.6,
+          "MRR": 1.0,
+          "nDCG@5": 0.9807710461847231,
+          "cappedRecall@50": 0.25
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 3,
+          "critical_shown": 3
+        },
+        "latency_s": 0.36677880003117025
+      },
+      {
+        "query_id": "Q09",
+        "query_type": "mixed_reviews",
+        "status": "ok",
+        "returned_ids": [
+          "P379709"
+        ],
+        "metrics": {
+          "correct_outcome": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "latency_s": 0.2085160999558866
+      },
+      {
+        "query_id": "Q10",
+        "query_type": "no_match",
+        "status": "no_results",
+        "returned_ids": [],
+        "metrics": {
+          "correct_outcome": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.01745020004455
+      },
+      {
+        "query_id": "Q11",
+        "query_type": "strict_price",
+        "status": "ok",
+        "returned_ids": [
+          "P457442",
+          "P427412",
+          "P443830",
+          "P443845",
+          "P479732"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.061350999982096255
+      },
+      {
+        "query_id": "Q12",
+        "query_type": "no_budget",
+        "status": "ok",
+        "returned_ids": [
+          "P467614",
+          "P476428",
+          "P500756",
+          "P418346",
+          "P476009"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.08673350000753999
+      },
+      {
+        "query_id": "Q13",
+        "query_type": "ambiguous",
+        "status": "ok",
+        "returned_ids": [
+          "P476529",
+          "P433173",
+          "P470529",
+          "P504171",
+          "P480165"
+        ],
+        "metrics": {},
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "latency_s": 0.1252311000134796
+      },
+      {
+        "query_id": "Q14",
+        "query_type": "comparison",
+        "status": "ok",
+        "returned_ids": [
+          "P429637",
+          "P379709"
+        ],
+        "metrics": {
+          "correct_outcome": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 2,
+          "critical_shown": 2
+        },
+        "latency_s": 0.14176620007492602
+      },
+      {
+        "query_id": "Q15",
+        "query_type": "ingredient",
+        "status": "ok",
+        "returned_ids": [
+          "P443845",
+          "P500746",
+          "P427419",
+          "P471025",
+          "P459130"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "latency_s": 0.28660929994657636
+      },
+      {
+        "query_id": "Q16",
+        "query_type": "extra_retrieval",
+        "status": "ok",
+        "returned_ids": [
+          "P482077",
+          "P472179",
+          "P442770",
+          "P473009",
+          "P478296"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.06847010005731136
+      },
+      {
+        "query_id": "Q17",
+        "query_type": "extra_retrieval",
+        "status": "ok",
+        "returned_ids": [
+          "P479990",
+          "P448445",
+          "P501961",
+          "P388629",
+          "P455844"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.08865769999101758
+      },
+      {
+        "query_id": "Q18",
+        "query_type": "extra_retrieval",
+        "status": "ok",
+        "returned_ids": [
+          "P456217",
+          "P469450",
+          "P459138",
+          "P474829",
+          "P474379"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.08313499996438622
+      },
+      {
+        "query_id": "Q19",
+        "query_type": "extra_retrieval",
+        "status": "ok",
+        "returned_ids": [
+          "P409317",
+          "P454512",
+          "P407636",
+          "P500992",
+          "P460716"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.8,
+          "MRR": 1.0,
+          "nDCG@5": 0.9125299483251055,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.09039200004190207
+      },
+      {
+        "query_id": "Q20",
+        "query_type": "extra_retrieval",
+        "status": "ok",
+        "returned_ids": [
+          "P296413",
+          "P450633",
+          "P483696",
+          "P427536",
+          "P232902"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.2,
+          "MRR": 1.0,
+          "nDCG@5": 0.4463867350912054,
+          "cappedRecall@50": 0.68
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "latency_s": 0.28763639996759593
+      }
+    ],
+    "hybrid": [
+      {
+        "query_id": "Q01",
+        "query_type": "dry_skin_budget",
+        "status": "ok",
+        "returned_ids": [
+          "P500094",
+          "P411403",
+          "P482694",
+          "P481168",
+          "P500120"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 2,
+          "critical_shown": 2
+        },
+        "latency_s": 0.11632020003162324
+      },
+      {
+        "query_id": "Q02",
+        "query_type": "fragrance_free",
+        "status": "ok",
+        "returned_ids": [
+          "P472342",
+          "P476736",
+          "P502169",
+          "P483701",
+          "P470040"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 3,
+          "critical_shown": 3
+        },
+        "latency_s": 0.3302281000651419
+      },
+      {
+        "query_id": "Q03",
+        "query_type": "oily_lightweight",
+        "status": "ok",
+        "returned_ids": [
+          "P504784",
+          "P482695",
+          "P504810",
+          "P455930",
+          "P232906"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 0.9
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "latency_s": 0.1365779999177903
+      },
+      {
+        "query_id": "Q04",
+        "query_type": "sunscreen_budget",
+        "status": "ok",
+        "returned_ids": [
+          "P454389",
+          "P505711",
+          "P504778",
+          "P500993",
+          "P482321"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "latency_s": 0.08944200002588332
+      },
+      {
+        "query_id": "Q05",
+        "query_type": "highly_rated_shampoo",
+        "status": "ok",
+        "returned_ids": [
+          "P403934",
+          "P481735",
+          "P461610",
+          "P434432",
+          "P448733"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.03220860008150339
+      },
+      {
+        "query_id": "Q06",
+        "query_type": "perfume_everyday",
+        "status": "ok",
+        "returned_ids": [
+          "P503069",
+          "P431443",
+          "P483107",
+          "P483109",
+          "P416349"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.04708099993877113
+      },
+      {
+        "query_id": "Q07",
+        "query_type": "brand",
+        "status": "ok",
+        "returned_ids": [
+          "P473304",
+          "P471761",
+          "P454120",
+          "P403818",
+          "P392249"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "latency_s": 0.2008475000038743
+      },
+      {
+        "query_id": "Q08",
+        "query_type": "zero_review_products",
+        "status": "ok",
+        "returned_ids": [
+          "P500094",
+          "P479125",
+          "P469517",
+          "P440493",
+          "P480166"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.6,
+          "MRR": 1.0,
+          "nDCG@5": 0.9686152031181796,
+          "cappedRecall@50": 0.25
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 3,
+          "critical_shown": 3
+        },
+        "latency_s": 0.2728122000116855
+      },
+      {
+        "query_id": "Q09",
+        "query_type": "mixed_reviews",
+        "status": "ok",
+        "returned_ids": [
+          "P379709"
+        ],
+        "metrics": {
+          "correct_outcome": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "latency_s": 0.06983679998666048
+      },
+      {
+        "query_id": "Q10",
+        "query_type": "no_match",
+        "status": "no_results",
+        "returned_ids": [],
+        "metrics": {
+          "correct_outcome": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.01979849999770522
+      },
+      {
+        "query_id": "Q11",
+        "query_type": "strict_price",
+        "status": "ok",
+        "returned_ids": [
+          "P457442",
+          "P427412",
+          "P443830",
+          "P443845",
+          "P427416"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.029826799989677966
+      },
+      {
+        "query_id": "Q12",
+        "query_type": "no_budget",
+        "status": "ok",
+        "returned_ids": [
+          "P467614",
+          "P500756",
+          "P474809",
+          "P456571",
+          "P418346"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.04065940005239099
+      },
+      {
+        "query_id": "Q13",
+        "query_type": "ambiguous",
+        "status": "ok",
+        "returned_ids": [
+          "P503726",
+          "P476529",
+          "P433173",
+          "P470529",
+          "P503634"
+        ],
+        "metrics": {},
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.01944750000257045
+      },
+      {
+        "query_id": "Q14",
+        "query_type": "comparison",
+        "status": "ok",
+        "returned_ids": [
+          "P429637",
+          "P379709"
+        ],
+        "metrics": {
+          "correct_outcome": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 2,
+          "critical_shown": 2
+        },
+        "latency_s": 0.06982490001246333
+      },
+      {
+        "query_id": "Q15",
+        "query_type": "ingredient",
+        "status": "ok",
+        "returned_ids": [
+          "P500746",
+          "P443845",
+          "P481697",
+          "P471025",
+          "P502200"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 2,
+          "critical_shown": 2
+        },
+        "latency_s": 0.30460349994245917
+      },
+      {
+        "query_id": "Q16",
+        "query_type": "extra_retrieval",
+        "status": "ok",
+        "returned_ids": [
+          "P472179",
+          "P479649",
+          "P466443",
+          "P476724",
+          "P478296"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.03786269994452596
+      },
+      {
+        "query_id": "Q17",
+        "query_type": "extra_retrieval",
+        "status": "ok",
+        "returned_ids": [
+          "P448445",
+          "P479990",
+          "P501961",
+          "P388629",
+          "P501315"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.03607160004321486
+      },
+      {
+        "query_id": "Q18",
+        "query_type": "extra_retrieval",
+        "status": "ok",
+        "returned_ids": [
+          "P469450",
+          "P504459",
+          "P456217",
+          "P474379",
+          "P481721"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.05953680002130568
+      },
+      {
+        "query_id": "Q19",
+        "query_type": "extra_retrieval",
+        "status": "ok",
+        "returned_ids": [
+          "P501215",
+          "P454512",
+          "P501583",
+          "P407636",
+          "P431511"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.8,
+          "MRR": 1.0,
+          "nDCG@5": 0.9125299483251055,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.05604409996885806
+      },
+      {
+        "query_id": "Q20",
+        "query_type": "extra_retrieval",
+        "status": "ok",
+        "returned_ids": [
+          "P296413",
+          "P483696",
+          "P232902",
+          "P427536",
+          "P500614"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.2,
+          "MRR": 1.0,
+          "nDCG@5": 0.4759908431563517,
+          "cappedRecall@50": 0.68
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 2,
+          "critical_shown": 2
+        },
+        "latency_s": 0.4078632000600919
+      }
+    ],
+    "hybrid_rerank_minilm": [
+      {
+        "query_id": "Q01",
+        "query_type": "dry_skin_budget",
+        "status": "ok",
+        "returned_ids": [
+          "P503891",
+          "P500094",
+          "P502756",
+          "P483457",
+          "P475203"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "latency_s": 2.4217197000980377
+      },
+      {
+        "query_id": "Q02",
+        "query_type": "fragrance_free",
+        "status": "ok",
+        "returned_ids": [
+          "P472342",
+          "P472343",
+          "P470040",
+          "P232906",
+          "P500094"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "latency_s": 2.4076438000192866
+      },
+      {
+        "query_id": "Q03",
+        "query_type": "oily_lightweight",
+        "status": "ok",
+        "returned_ids": [
+          "P411388",
+          "P504784",
+          "P505031",
+          "P455930",
+          "P232906"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "latency_s": 2.5443144999444485
+      },
+      {
+        "query_id": "Q04",
+        "query_type": "sunscreen_budget",
+        "status": "ok",
+        "returned_ids": [
+          "P500993",
+          "P456392",
+          "P504778",
+          "P482321",
+          "P505711"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "latency_s": 1.414501899969764
+      },
+      {
+        "query_id": "Q05",
+        "query_type": "highly_rated_shampoo",
+        "status": "ok",
+        "returned_ids": [
+          "P403934",
+          "P481735",
+          "P434432",
+          "P468827",
+          "P427718"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 2.2322612999705598
+      },
+      {
+        "query_id": "Q06",
+        "query_type": "perfume_everyday",
+        "status": "ok",
+        "returned_ids": [
+          "P483139",
+          "P431443",
+          "P483107",
+          "P451242",
+          "P482076"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 1.7652391000883654
+      },
+      {
+        "query_id": "Q07",
+        "query_type": "brand",
+        "status": "ok",
+        "returned_ids": [
+          "P392249",
+          "P392248",
+          "P471547",
+          "P426836",
+          "P406712"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "latency_s": 2.451803099946119
+      },
+      {
+        "query_id": "Q08",
+        "query_type": "zero_review_products",
+        "status": "ok",
+        "returned_ids": [
+          "P500094",
+          "P479125",
+          "P469517",
+          "P440493",
+          "P480166"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.6,
+          "MRR": 1.0,
+          "nDCG@5": 0.9686152031181796,
+          "cappedRecall@50": 0.25
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 3,
+          "critical_shown": 3
+        },
+        "latency_s": 0.8958002999424934
+      },
+      {
+        "query_id": "Q09",
+        "query_type": "mixed_reviews",
+        "status": "ok",
+        "returned_ids": [
+          "P379709"
+        ],
+        "metrics": {
+          "correct_outcome": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "latency_s": 0.0895429999800399
+      },
+      {
+        "query_id": "Q10",
+        "query_type": "no_match",
+        "status": "no_results",
+        "returned_ids": [],
+        "metrics": {
+          "correct_outcome": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.01584999996703118
+      },
+      {
+        "query_id": "Q11",
+        "query_type": "strict_price",
+        "status": "ok",
+        "returned_ids": [
+          "P457442",
+          "P443830",
+          "P443846",
+          "P427413",
+          "P427412"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 1.2942252000793815
+      },
+      {
+        "query_id": "Q12",
+        "query_type": "no_budget",
+        "status": "ok",
+        "returned_ids": [
+          "P467614",
+          "P500756",
+          "P418346",
+          "P467972",
+          "P443841"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "latency_s": 2.455067600007169
+      },
+      {
+        "query_id": "Q13",
+        "query_type": "ambiguous",
+        "status": "ok",
+        "returned_ids": [
+          "P503726",
+          "P504171",
+          "P467615",
+          "P503634",
+          "P469182"
+        ],
+        "metrics": {},
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 2.6629681999329478
+      },
+      {
+        "query_id": "Q14",
+        "query_type": "comparison",
+        "status": "ok",
+        "returned_ids": [
+          "P429637",
+          "P379709"
+        ],
+        "metrics": {
+          "correct_outcome": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 2,
+          "critical_shown": 2
+        },
+        "latency_s": 0.15611699991859496
+      },
+      {
+        "query_id": "Q15",
+        "query_type": "ingredient",
+        "status": "ok",
+        "returned_ids": [
+          "P502200",
+          "P500746",
+          "P469110",
+          "P502966",
+          "P479362"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 2,
+          "critical_shown": 2
+        },
+        "latency_s": 2.5917430999688804
+      },
+      {
+        "query_id": "Q16",
+        "query_type": "extra_retrieval",
+        "status": "ok",
+        "returned_ids": [
+          "P472179",
+          "P442770",
+          "P482077",
+          "P475930",
+          "P462706"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 1.692415300058201
+      },
+      {
+        "query_id": "Q17",
+        "query_type": "extra_retrieval",
+        "status": "ok",
+        "returned_ids": [
+          "P479990",
+          "P448445",
+          "P501961",
+          "P501315",
+          "P448865"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 1.7054408999392763
+      },
+      {
+        "query_id": "Q18",
+        "query_type": "extra_retrieval",
+        "status": "ok",
+        "returned_ids": [
+          "P469450",
+          "P504459",
+          "P502455",
+          "P238001",
+          "P481721"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 2.231554599944502
+      },
+      {
+        "query_id": "Q19",
+        "query_type": "extra_retrieval",
+        "status": "ok",
+        "returned_ids": [
+          "P501583",
+          "P501215",
+          "P452736",
+          "P471221",
+          "P443336"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.4,
+          "MRR": 1.0,
+          "nDCG@5": 0.7020976466720958,
+          "cappedRecall@50": 0.94
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 2.01782920002006
+      },
+      {
+        "query_id": "Q20",
+        "query_type": "extra_retrieval",
+        "status": "ok",
+        "returned_ids": [
+          "P500614",
+          "P505379",
+          "P217932",
+          "P476726",
+          "P483696"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.2,
+          "MRR": 1.0,
+          "nDCG@5": 0.4208033850082279,
+          "cappedRecall@50": 0.76
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 3,
+          "critical_shown": 3
+        },
+        "latency_s": 2.6961675999918953
+      }
+    ],
+    "hybrid_rerank_bge-base": [
+      {
+        "query_id": "Q01",
+        "query_type": "dry_skin_budget",
+        "status": "ok",
+        "returned_ids": [
+          "P502756",
+          "P411403",
+          "P504794",
+          "P503891",
+          "P480280"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 3,
+          "critical_shown": 3
+        },
+        "latency_s": 13.829813800053671
+      },
+      {
+        "query_id": "Q02",
+        "query_type": "fragrance_free",
+        "status": "ok",
+        "returned_ids": [
+          "P472342",
+          "P502169",
+          "P472343",
+          "P447783",
+          "P470040"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 3,
+          "critical_shown": 3
+        },
+        "latency_s": 13.329706999938935
+      },
+      {
+        "query_id": "Q03",
+        "query_type": "oily_lightweight",
+        "status": "ok",
+        "returned_ids": [
+          "P505031",
+          "P411388",
+          "P504784",
+          "P500055",
+          "P232906"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.8,
+          "MRR": 1.0,
+          "nDCG@5": 0.9026211001048624,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "latency_s": 14.430865100002848
+      },
+      {
+        "query_id": "Q04",
+        "query_type": "sunscreen_budget",
+        "status": "ok",
+        "returned_ids": [
+          "P456392",
+          "P482320",
+          "P482321",
+          "P504778",
+          "P479646"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "latency_s": 7.713816100033
+      },
+      {
+        "query_id": "Q05",
+        "query_type": "highly_rated_shampoo",
+        "status": "ok",
+        "returned_ids": [
+          "P461610",
+          "P434207",
+          "P468827",
+          "P434432",
+          "P481735"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 13.046132599934936
+      },
+      {
+        "query_id": "Q06",
+        "query_type": "perfume_everyday",
+        "status": "ok",
+        "returned_ids": [
+          "P479498",
+          "P431443",
+          "P416349",
+          "P501291",
+          "P483109"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 11.049820500076748
+      },
+      {
+        "query_id": "Q07",
+        "query_type": "brand",
+        "status": "ok",
+        "returned_ids": [
+          "P471547",
+          "P426836",
+          "P392249",
+          "P424378",
+          "P392245"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "latency_s": 13.397414400009438
+      },
+      {
+        "query_id": "Q08",
+        "query_type": "zero_review_products",
+        "status": "ok",
+        "returned_ids": [
+          "P500094",
+          "P479125",
+          "P480166",
+          "P469517",
+          "P440493"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.6,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 0.25
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 3,
+          "critical_shown": 3
+        },
+        "latency_s": 3.6198260000674054
+      },
+      {
+        "query_id": "Q09",
+        "query_type": "mixed_reviews",
+        "status": "ok",
+        "returned_ids": [
+          "P379709"
+        ],
+        "metrics": {
+          "correct_outcome": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "latency_s": 0.12310860003344715
+      },
+      {
+        "query_id": "Q10",
+        "query_type": "no_match",
+        "status": "no_results",
+        "returned_ids": [],
+        "metrics": {
+          "correct_outcome": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 0.028127099969424307
+      },
+      {
+        "query_id": "Q11",
+        "query_type": "strict_price",
+        "status": "ok",
+        "returned_ids": [
+          "P443845",
+          "P443843",
+          "P457442",
+          "P455899",
+          "P440499"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "latency_s": 8.33394199993927
+      },
+      {
+        "query_id": "Q12",
+        "query_type": "no_budget",
+        "status": "ok",
+        "returned_ids": [
+          "P467614",
+          "P467972",
+          "P474809",
+          "P476009",
+          "P474110"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 2,
+          "critical_shown": 2
+        },
+        "latency_s": 14.206279000034556
+      },
+      {
+        "query_id": "Q13",
+        "query_type": "ambiguous",
+        "status": "ok",
+        "returned_ids": [
+          "P503726",
+          "P503634",
+          "P479987",
+          "P470529",
+          "P467615"
+        ],
+        "metrics": {},
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 14.392100099939853
+      },
+      {
+        "query_id": "Q14",
+        "query_type": "comparison",
+        "status": "ok",
+        "returned_ids": [
+          "P429637",
+          "P379709"
+        ],
+        "metrics": {
+          "correct_outcome": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 2,
+          "critical_shown": 2
+        },
+        "latency_s": 0.15541590005159378
+      },
+      {
+        "query_id": "Q15",
+        "query_type": "ingredient",
+        "status": "ok",
+        "returned_ids": [
+          "P469110",
+          "P481697",
+          "P502200",
+          "P479362",
+          "P406712"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "latency_s": 11.751238700002432
+      },
+      {
+        "query_id": "Q16",
+        "query_type": "extra_retrieval",
+        "status": "ok",
+        "returned_ids": [
+          "P472179",
+          "P503762",
+          "P442770",
+          "P475930",
+          "P471004"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 10.392175500048324
+      },
+      {
+        "query_id": "Q17",
+        "query_type": "extra_retrieval",
+        "status": "ok",
+        "returned_ids": [
+          "P501961",
+          "P479990",
+          "P448445",
+          "P504317",
+          "P455844"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 9.895546999992803
+      },
+      {
+        "query_id": "Q18",
+        "query_type": "extra_retrieval",
+        "status": "ok",
+        "returned_ids": [
+          "P469450",
+          "P448716",
+          "P238001",
+          "P456217",
+          "P504459"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0,
+          "cappedRecall@50": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 11.648254500003532
+      },
+      {
+        "query_id": "Q19",
+        "query_type": "extra_retrieval",
+        "status": "ok",
+        "returned_ids": [
+          "P501583",
+          "P500992",
+          "P474101",
+          "P409317",
+          "P471221"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.8,
+          "MRR": 1.0,
+          "nDCG@5": 0.9125299483251055,
+          "cappedRecall@50": 0.94
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "latency_s": 11.306128000025637
+      },
+      {
+        "query_id": "Q20",
+        "query_type": "extra_retrieval",
+        "status": "ok",
+        "returned_ids": [
+          "P480346",
+          "P217932",
+          "P505379",
+          "P454315",
+          "P427536"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.2,
+          "MRR": 1.0,
+          "nDCG@5": 0.5594401368490775,
+          "cappedRecall@50": 0.76
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "latency_s": 11.692212100024335
+      }
+    ]
+  },
+  "unlabelled": [
+    "Q13"
+  ]
+}

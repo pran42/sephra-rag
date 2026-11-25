@@ -1,0 +1,22 @@
+[
+  {"id": "Q01", "type": "dry_skin_budget", "query": "Moisturizer for dry skin under $30 that is hydrating and not greasy"},
+  {"id": "Q02", "type": "fragrance_free", "query": "Fragrance-free skincare products"},
+  {"id": "Q03", "type": "oily_lightweight", "query": "Lightweight moisturizer for oily skin"},
+  {"id": "Q04", "type": "sunscreen_budget", "query": "Sunscreen under $25"},
+  {"id": "Q05", "type": "highly_rated_shampoo", "query": "Highly rated shampoo for damaged hair"},
+  {"id": "Q06", "type": "perfume_everyday", "query": "Perfume for everyday use"},
+  {"id": "Q07", "type": "brand", "query": "Show me skincare products from Drunk Elephant"},
+  {"id": "Q08", "type": "zero_review_products", "query": "Hydrating oil-free gel moisturizer under $30"},
+  {"id": "Q09", "type": "mixed_reviews", "query": "What do customers say about the Tata Harper Repairative Anti-Aging Moisturizer?"},
+  {"id": "Q10", "type": "no_match", "query": "Tatcha moisturizer under $10"},
+  {"id": "Q11", "type": "strict_price", "query": "Face serum under $15"},
+  {"id": "Q12", "type": "no_budget", "query": "Vitamin C serum for brightening"},
+  {"id": "Q13", "type": "ambiguous", "query": "I need something nice"},
+  {"id": "Q14", "type": "comparison", "query": "Compare La Mer The Moisturizing Cool Gel Cream and Tata Harper Repairative Anti-Aging Moisturizer"},
+  {"id": "Q15", "type": "ingredient", "query": "Serum with hyaluronic acid"},
+  {"id": "Q16", "type": "extra_retrieval", "query": "Vegan mascara"},
+  {"id": "Q17", "type": "extra_retrieval", "query": "Hair oil for frizz"},
+  {"id": "Q18", "type": "extra_retrieval", "query": "Body lotion for very dry skin"},
+  {"id": "Q19", "type": "extra_retrieval", "query": "Long-lasting matte lipstick"},
+  {"id": "Q20", "type": "extra_retrieval", "query": "Gentle cleanser for sensitive skin"}
+]

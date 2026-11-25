@@ -1,0 +1,31 @@
+# Sephra — tested on Windows 11, Python 3.14.3 (versions pinned from the working .venv)
+
+# Vector database (existing persistent collections in data/chroma_db)
+chromadb==1.5.9
+
+# Embeddings (BAAI/bge-small-en-v1.5) and optional CrossEncoder reranking
+sentence-transformers==6.3.0
+transformers==5.23.0
+torch==2.15.0
+huggingface_hub==2.4.0
+
+# Data handling and validation
+pandas==3.1.1
+numpy==2.5.5
+pydantic==2.14.4
+
+# Keyword retrieval (BM25)
+rank-bm25==0.2.2
+
+# LLM layer (OpenRouter over plain HTTPS; key loaded from .env)
+httpx==0.28.1
+python-dotenv==1.2.4
+
+# User interface
+streamlit==1.67.0
+
+# Tests
+pytest==9.2.0
+
+# Evaluation framework (optional; only for sephra.evaluation.evaluate_ragas)
+ragas==0.4.4

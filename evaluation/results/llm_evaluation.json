@@ -1,0 +1,1649 @@
+{
+  "summary": {
+    "rule": {
+      "P@5": 1.0,
+      "strictP@5": 0.5375,
+      "nDCG@5": 0.9598209996624772,
+      "special_cases": "3/3",
+      "hard_filter_violations": 0,
+      "llm_fallbacks": null,
+      "guard_removals": 0,
+      "mean_parse_latency_s": 0.0045
+    },
+    "llm": {
+      "P@5": 1.0,
+      "strictP@5": 0.5375,
+      "nDCG@5": 0.9598209996624772,
+      "special_cases": "3/3",
+      "hard_filter_violations": 0,
+      "llm_fallbacks": 0,
+      "guard_removals": 8,
+      "mean_parse_latency_s": 0.0165
+    },
+    "answers": {
+      "status_counts": {
+        "generated": 13,
+        "skipped": 1,
+        "rate_limited": 6
+      },
+      "first_attempt_grounded": 13,
+      "mean_latency_s_generated": 7.159230769230769
+    },
+    "live_llm_calls_this_run": 15
+  },
+  "per_query": [
+    {
+      "id": "Q01",
+      "query": "Moisturizer for dry skin under $30 that is hydrating and not greasy",
+      "rule": {
+        "parser_used": "rule_based",
+        "constraints": [
+          "price <= $30",
+          "category: Skincare > Moisturizers OR Skincare > Night Creams"
+        ],
+        "skin_types": [
+          "dry"
+        ],
+        "semantic_query": "moisturizer for dry skin that is hydrating and not greasy",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P500094",
+          "P411403",
+          "P482694",
+          "P481168",
+          "P500120"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 2,
+          "critical_shown": 2
+        },
+        "parse_latency_s": 0.01
+      },
+      "llm": {
+        "parser_used": "llm",
+        "constraints": [
+          "price <= $30",
+          "category: Skincare > Moisturizers OR Skincare > Night Creams"
+        ],
+        "skin_types": [
+          "dry"
+        ],
+        "semantic_query": "Hydrating moisturizer for dry skin with a non-greasy finish",
+        "guard_removals": [
+          "Removed attribute 'Oil Free': not requested."
+        ],
+        "status": "ok",
+        "returned_ids": [
+          "P500094",
+          "P411403",
+          "P482694",
+          "P481168",
+          "P503891"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "parse_latency_s": 0.01
+      },
+      "answer": {
+        "status": "generated",
+        "attempts": 1,
+        "latency_s": 8.69,
+        "message": "Answer passed grounding checks.",
+        "grounding": {
+          "unknown_prices": [],
+          "unknown_product_ids": [],
+          "unknown_ratings": [],
+          "recommends_when_no_results": false
+        },
+        "text": "Here are moisturizers from the dataset that fit dry skin under $30. Prices and ratings are in the dataset (a static snapshot, so they may not be current).\n\nHydrating Oil-Free Gel Moisturizer [P500094] \u2014 Community Sixty-Six, $25.00, rated 4.12/5, 1.7 oz / 50 mL. The listing is an oil-free gel with Hyaluronic Acid, tagged Best for Dry, Combo, Normal Skin, and fragrance-free, which fits your non-greasy preference. No customer reviews are loaded for this product in our dataset partition, so I can't speak to how it wears.\n\nGreen Tea Hyaluronic Acid Hydrating Moisturizer [P503891] \u2014 innisfree, $29.00, rated 4.73/5, 1.7 oz / 50 mL. Listing highlights Hyaluronic Acid, Hydrating, and Good for Dryness, tagged Best for Dry, Combo, Normal Skin. No reviews are loaded in our partition (the record notes 411 on Sephora at collection, not loaded here).\n\nConfidence in a Cream Anti-Aging Hydrating Moisturizer [P411403] \u2014 IT Cosmetics, $20.00, rated 4.62/5, 0.51 oz / 15 mL. Contains Hyaluronic Acid and Shea Butter, tagged Best for Dry, Combo, Normal Skin; note it's a richer cream, so it may feel less \"non-greasy\" than the gel option. No reviews are loaded for this product.\n\nMini Water Bank Blue Hyaluronic Cream Moisturizer [P482694] \u2014 LANEIGE, $23.00, rated 3.51/5, .67 oz / 20 mL. This is the only one with loaded reviews (37 total): 21 positive, 7 mixed, 9 critical, recommended by 68% of reviewers who answered. One reviewer with dry skin said it made their skin \"soft and hydrated,\" while another with dry skin found it \"not moisturizing enough,\" and a third reported breakouts and dry patches \u2014 so sentiment is genuinely mixed.\n\nMini The Dewy Skin Cream Plumping & Hydrating Moisturizer [P481168] \u2014 Tatcha, $22.00, 0.34 oz / 10 mL; rating is not available in the dataset. Listing highlights Hyaluronic Acid, Hydrating, and Good for Dryness. No reviews are loaded for this product.\n\nIf a non-greasy finish is your top priority, the oil-free gel [P500094] is the closest match on listing facts, though none of these have loaded reviews confirming the feel except the Laneige, whose feedback is mixed."
+      }
+    },
+    {
+      "id": "Q02",
+      "query": "Fragrance-free skincare products",
+      "rule": {
+        "parser_used": "rule_based",
+        "constraints": [
+          "category: Skincare",
+          "attribute: Fragrance Free"
+        ],
+        "skin_types": [],
+        "semantic_query": "fragrance-free skincare products",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P472342",
+          "P476736",
+          "P502169",
+          "P483701",
+          "P470040"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 3,
+          "critical_shown": 3
+        },
+        "parse_latency_s": 0.01
+      },
+      "llm": {
+        "parser_used": "llm",
+        "constraints": [
+          "category: Skincare",
+          "attribute: Fragrance Free"
+        ],
+        "skin_types": [],
+        "semantic_query": "Fragrance-free skincare products",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P472342",
+          "P476736",
+          "P502169",
+          "P483701",
+          "P470040"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 3,
+          "critical_shown": 3
+        },
+        "parse_latency_s": 0.02
+      },
+      "answer": {
+        "status": "generated",
+        "attempts": 1,
+        "latency_s": 13.57,
+        "message": "Answer passed grounding checks.",
+        "grounding": {
+          "unknown_prices": [],
+          "unknown_product_ids": [],
+          "unknown_ratings": [],
+          "recommends_when_no_results": false
+        },
+        "text": "From the loaded dataset snapshot, these products are listed as fragrance-free skincare:\n\n- Superkind Fragrance-Free Radiance Mask [P472342] is $68.00, rated 4.75/5 in the dataset, and is 1 oz/ 30 mL. All 4 loaded reviews are positive (4-5 stars), with 100% recommending it; one reviewer with dry skin said it tingled or stung and the glow was mild, while other reviewers described it as gentle and soothing.\n\n- Superkind Fragrance-Free Bio-Barrier Serum [P476736] is $146.00, rated 4.73/5 in the dataset, and is 1 oz/ 30 mL. Of 44 loaded reviews, 42 are positive, 1 mixed, and 1 critical, with 98% recommending it; one reviewer with normal skin said it has a scent despite the fragrance-free claim, and one reviewer with dry skin said it caused small pimple-like bumps.\n\n- Barrier+ Besties Hydrating and Nourishing Kit [P502169] is $40.00 and rated 4.72/5 in the dataset. Of 76 loaded reviews, 72 are positive, 1 mixed, and 3 critical, with 96% recommending it; one reviewer with dry skin said it did not remove makeup well and broke them out, and another reviewer said the products are small for the price.\n\n- Daily Essentials Travel Set [P483701] is $50.00 and rated 4.57/5 in the dataset. Of 108 loaded reviews, 94 are positive, 9 mixed, and 5 critical, with 86% recommending it; one reviewer with combination skin said the serum smelled like rancid chemicals or old plastic and the sizes were minuscule, while another said the moisturizer felt heavy and greasy.\n\n- Ultra Facial Oil-Free Gel Cream [P470040] is $38.00, rated 4.49/5 in the dataset, and is 1.7 oz/ 50 mL. There are no customer reviews for this product in the loaded dataset, so no review-based sentiment is available."
+      }
+    },
+    {
+      "id": "Q03",
+      "query": "Lightweight moisturizer for oily skin",
+      "rule": {
+        "parser_used": "rule_based",
+        "constraints": [
+          "category: Skincare > Moisturizers OR Skincare > Night Creams"
+        ],
+        "skin_types": [
+          "oily"
+        ],
+        "semantic_query": "lightweight moisturizer for oily skin",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P504784",
+          "P482695",
+          "P504810",
+          "P455930",
+          "P232906"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "parse_latency_s": 0.01
+      },
+      "llm": {
+        "parser_used": "llm",
+        "constraints": [
+          "category: Skincare > Moisturizers OR Skincare > Night Creams"
+        ],
+        "skin_types": [
+          "oily"
+        ],
+        "semantic_query": "Lightweight moisturizer for oily skin",
+        "guard_removals": [
+          "Removed attribute 'Oil Free': not requested."
+        ],
+        "status": "ok",
+        "returned_ids": [
+          "P504784",
+          "P482695",
+          "P504810",
+          "P455930",
+          "P232906"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "parse_latency_s": 0.01
+      },
+      "answer": {
+        "status": "generated",
+        "attempts": 1,
+        "latency_s": 6.48,
+        "message": "Answer passed grounding checks.",
+        "grounding": {
+          "unknown_prices": [],
+          "unknown_product_ids": [],
+          "unknown_ratings": [],
+          "recommends_when_no_results": false
+        },
+        "text": "Here are lightweight moisturizers from the dataset that fit oily skin, with prices and ratings as listed in the dataset:\n\nPriming Moisturizer Lightweight Buildable Face Cream by Glossier [P504784] \u2014 $24.00, 4.21/5, 1.7 oz / 50 mL. The listing tags it \"Best for Oily, Combo, Normal Skin\" and lists Hyaluronic Acid and Squalane. Of 17 loaded reviews, 10 were positive, 4 mixed, and 3 critical (recommended by 65%). One reviewer with oily skin called it a great all-year moisturizer, but a reviewer with combination skin said it felt \"way too moist\" and made them feel oily, and another with combination skin said a new formula with fatty alcohols clogged their pores.\n\nWater Bank Blue Hyaluronic Gel Moisturizer by LANEIGE [P482695] \u2014 $40.00, 4.05/5, 1.6 oz / 50 mL. The listing tags it \"Best for Oily Skin\" and lists Hyaluronic Acid. There are no customer reviews for this product in our loaded dataset, so I can't speak to how it performed for others.\n\nPriming Moisturizer Balance Oil-Control Gel-Cream by Glossier [P504810] \u2014 $25.00, 4.67/5, 1.7 oz / 50 mL. The listing tags it \"Best for Oily Skin\" and lists Niacinamide. Of 13 loaded reviews, 11 were positive, 2 mixed, and 0 critical (recommended by 85%). Reviewers with oily skin described it as lightweight and mattifying, though one reviewer with combination-oily skin said it dried them out and caused flaking.\n\nWeightless Oil-Free Moisturizer by Shani Darden Skin Care [P455930] \u2014 $48.00, 4.26/5, 2.5 oz / 75 mL. The listing tags it \"Best for Oily, Combo, Normal Skin\" and lists Hyaluronic Acid. There are no customer reviews for this product in our loaded dataset.\n\nOil Free Moisturizer by Kate Somerville [P232906] \u2014 $76.00, 4.15/5, 1.7 oz / 50 mL. The listing tags it \"Best for Oily, Combo, Normal Skin\" and lists Oil Free and Fragrance Free. There are no customer reviews for this product in our loaded dataset.\n\nNote: prices, ratings, and availability come from a static dataset snapshot and may not reflect current information."
+      }
+    },
+    {
+      "id": "Q04",
+      "query": "Sunscreen under $25",
+      "rule": {
+        "parser_used": "rule_based",
+        "constraints": [
+          "price <= $25",
+          "category: Skincare > Sunscreen OR Men > Sunscreen"
+        ],
+        "skin_types": [],
+        "semantic_query": "sunscreen",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P454389",
+          "P505711",
+          "P504778",
+          "P500993",
+          "P482321"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "parse_latency_s": 0.01
+      },
+      "llm": {
+        "parser_used": "llm",
+        "constraints": [
+          "price <= $25",
+          "category: Skincare > Sunscreen OR Men > Sunscreen"
+        ],
+        "skin_types": [],
+        "semantic_query": "sunscreen",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P454389",
+          "P505711",
+          "P504778",
+          "P500993",
+          "P482321"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "parse_latency_s": 0.02
+      },
+      "answer": {
+        "status": "generated",
+        "attempts": 1,
+        "latency_s": 13.35,
+        "message": "Answer passed grounding checks.",
+        "grounding": {
+          "unknown_prices": [],
+          "unknown_product_ids": [],
+          "unknown_ratings": [],
+          "recommends_when_no_results": false
+        },
+        "text": "Here are the dataset matches for sunscreen priced at $25.00 or less:\n\n- **PLAY Antioxidant Body Sunscreen Mist SPF 50 PA++++** [P454389] is **$21.00** in the dataset, rated **3.90/5**, size **6.0 oz/ 177 mL**, and listed as in stock. It is a body sunscreen with SPF 50 PA++++. There are no customer reviews for this product in our loaded dataset.\n\n- **Polyglutamic Acid Dewy Sunscreen SPF 30** [P505711] is **$14.99** in the dataset, rated **4.87/5**, size **1.7 oz / 50 ml**, and listed as out of stock. Of 100 loaded reviews, 91 were positive, 9 mixed, and 0 critical; 97% recommended it. One reviewer with combination skin said it was lightweight and had no sunscreen smell, while another combination-skin reviewer said it felt thick, had a traditional sunscreen smell, and dragged on the skin.\n\n- **Invisible Shield Water-Gel Transparent Sunscreen SPF 35** [P504778] is **$25.00** in the dataset, rated **4.18/5**, size **1 oz / 30 mL**, and listed as in stock. Of 13 loaded reviews, 10 were positive, 2 mixed, and 1 critical; 77% recommended it. One reviewer with combination skin said it burned their face and attributed it to orange peel oil, while another said the bottle was too small for the price.\n\n- **The Sunscreen - 100% Mineral, Broad Spectrum SPF 30 with 20% Non-Nano Zinc, Hyaluronic Acid and Niacinamide** [P500993] is **$25.00** in the dataset, rated **4.53/5**, size **1.7 oz / 50 mL**, and listed as in stock. There are no customer reviews for this product in our loaded dataset.\n\n- **Mini Mineral Sheerscreen Sunscreen SPF 30 PA+++** [P482321] is **$22.00** in the dataset, rated **3.95/5**, size **.68 oz/ 20 mL**, and listed as in stock. There are no customer reviews for this product in our loaded dataset."
+      }
+    },
+    {
+      "id": "Q05",
+      "query": "Highly rated shampoo for damaged hair",
+      "rule": {
+        "parser_used": "rule_based",
+        "constraints": [
+          "rating >= 4",
+          "category: Hair > Shampoo"
+        ],
+        "skin_types": [],
+        "semantic_query": "shampoo for damaged hair",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P403934",
+          "P481735",
+          "P461610",
+          "P434432",
+          "P448733"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "parse_latency_s": 0.0
+      },
+      "llm": {
+        "parser_used": "llm",
+        "constraints": [
+          "rating >= 4",
+          "category: Hair > Shampoo"
+        ],
+        "skin_types": [],
+        "semantic_query": "Shampoo for damaged hair",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P403934",
+          "P481735",
+          "P461610",
+          "P434432",
+          "P448733"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "parse_latency_s": 0.02
+      },
+      "answer": {
+        "status": "generated",
+        "attempts": 1,
+        "latency_s": 7.53,
+        "message": "Answer passed grounding checks.",
+        "grounding": {
+          "unknown_prices": [],
+          "unknown_product_ids": [],
+          "unknown_ratings": [],
+          "recommends_when_no_results": false
+        },
+        "text": "Here are five shampoos from the dataset that match your request, ordered by their dataset rating. Note that none of these products have customer reviews in the loaded dataset partition, so I can't describe reviewer sentiment \u2014 the ratings below are the dataset's overall scores, not something I can break down by distribution.\n\n**Strength Cure Strengthening Shampoo for Damaged Color-Treated Hair** \u2014 Pureology [P461610]. $36.00, rated 4.68/5 in the dataset, 9 fl oz/ 266 mL, in stock. Listing highlights: good for damage, vegan, good for color care, all hair types, without parabens, without sulfates SLS & SLES. No reviews loaded (the record lists 2019 on Sephora at collection time, in partitions not loaded).\n\n**Resistance Strengthening Shampoo for Extremely Damaged Hair** \u2014 K\u00e9rastase [P434432]. $40.00, rated 4.49/5 in the dataset, 8.5 oz/ 250 mL, in stock. Listing highlights: good for damage, hydrating, fresh scent, all hair types, good for dryness, increases shine. No reviews loaded (43 listed at collection).\n\n**Ashita Supreme Strengthening Shampoo for Damaged Hair** \u2014 shu uemura [P481735]. $52.00, rated 4.32/5 in the dataset, 10 oz/ 300 mL, in stock. Listing highlights: good for dryness, damage and frizz, increases shine, woody & earthy scent, all hair types. No reviews loaded (71 listed at collection).\n\n**Silk Bloom Shampoo for Damaged Hair** \u2014 shu uemura [P403934]. $52.00, rated 4.28/5 in the dataset, 10 oz/ 300 mL, in stock. Listing highlights: good for damage, hydrating, fresh scent, without phthalates, all hair types, increases shine. No reviews loaded (18 listed at collection).\n\n**Hydrating Recovery Shampoo for Dry, Damaged & Colored Hair** \u2014 Virtue [P448733]. $40.00, rated 4.18/5 in the dataset, 8 oz/ 240 mL, in stock. Listing highlights: good for damage, vegan, good for color care, without parabens, without sulfates SLS & SLES. No reviews loaded (153 listed at collection).\n\nAll prices, ratings and availability are from a static public dataset snapshot and may not reflect current information. I'm not affiliated with Sephora, and I can't make any claims about how these will perform on your hair."
+      }
+    },
+    {
+      "id": "Q06",
+      "query": "Perfume for everyday use",
+      "rule": {
+        "parser_used": "rule_based",
+        "constraints": [
+          "category: Fragrance > Perfume OR Fragrance > Rollerballs & Travel Size OR Fragrance > Cologne"
+        ],
+        "skin_types": [],
+        "semantic_query": "perfume for everyday use",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P503069",
+          "P431443",
+          "P483107",
+          "P483109",
+          "P416349"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "parse_latency_s": 0.01
+      },
+      "llm": {
+        "parser_used": "llm",
+        "constraints": [
+          "category: Fragrance > Perfume OR Fragrance > Rollerballs & Travel Size OR Fragrance > Cologne"
+        ],
+        "skin_types": [],
+        "semantic_query": "perfume for everyday use, versatile scent for daily wear",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P431443",
+          "P436759",
+          "P307002",
+          "P505320",
+          "P470219"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "parse_latency_s": 0.01
+      },
+      "answer": {
+        "status": "generated",
+        "attempts": 1,
+        "latency_s": 8.29,
+        "message": "Answer passed grounding checks.",
+        "grounding": {
+          "unknown_prices": [],
+          "unknown_product_ids": [],
+          "unknown_ratings": [],
+          "recommends_when_no_results": false
+        },
+        "text": "Here are five options from the dataset that fit an everyday, versatile scent. Prices and ratings are in the dataset (a static snapshot, so they may not reflect current information).\n\n**James Perfume** \u2014 By Rosie Jane [P431443]\n$70.00, rated 4.60/5, 1.7 oz/ 50 mL, in stock in the snapshot. The listing describes it as a Woody & Earthy scent that is unisex/genderless, vegan, and Clean + Planet Positive. Listed ingredients include citrus nobilis (mandarin orange) peel oil, hedione (methyl dihydrojasmonate), and linalool, among others (list truncated in the dataset).\n\n**James Perfume Oil** \u2014 By Rosie Jane [P436759]\n$45.00, rated 4.88/5, .23 fl oz / 7 ml, in stock in the snapshot. Listing highlights are Vegan, Unisex/ Genderless Scent, Woody & Earthy Scent, Clean + Planet Positive, and Alcohol Free \u2014 the small rollerball-style size makes it easy to carry for reapplication.\n\n**Yellow Diamond** \u2014 Versace [P307002]\n$65.00, rated 4.32/5, 1 oz/ 30 mL, in stock in the snapshot. The listing tags it as a Layerable Scent and Floral Scent. Listed ingredients include Alcohol Denat. (Sd Alcohol 39-C), Citral, Citronellol, Geraniol, Limonene, and Linalool (list truncated).\n\n**My Way Parfum** \u2014 Armani Beauty [P505320]\n$186.00, rated 4.65/5, 3 oz / 90, in stock in the snapshot. Listing highlights are Layerable Scent and Floral Scent. Listed ingredients include Alcohol, Parfum/Fragrance, Aqua/Water, Linalool, Benzyl Salicylate, and Limonene (list truncated).\n\n**PEAR INC.** \u2014 Juliette Has a Gun [P470219]\n$140.00, rated 4.09/5, 3.3 oz/ 98 mL, in stock in the snapshot. The listing describes it as Unisex/ Genderless, Layerable, and a Fresh Scent. Listed ingredients include Alcohol Denat., Parfum (Fragrance), Aqua (Water), Limonene, and Citral (list truncated).\n\nOne caveat on sentiment: none of these five products has any customer reviews in our loaded dataset partition, so I can't tell you anything about how they actually wear day to day \u2014 that isn't a negative signal, just missing data. The dataset's product records mention review counts on Sephora at collection time (for example 314 for Yellow Diamond and 399 for PEAR INC.), but those reviews are in partitions we did not load."
+      }
+    },
+    {
+      "id": "Q07",
+      "query": "Show me skincare products from Drunk Elephant",
+      "rule": {
+        "parser_used": "rule_based",
+        "constraints": [
+          "category: Skincare",
+          "brand: Drunk Elephant"
+        ],
+        "skin_types": [],
+        "semantic_query": "skincare products from drunk elephant",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P473304",
+          "P471761",
+          "P454120",
+          "P403818",
+          "P392249"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "parse_latency_s": 0.01
+      },
+      "llm": {
+        "parser_used": "llm",
+        "constraints": [
+          "category: Skincare",
+          "brand: Drunk Elephant"
+        ],
+        "skin_types": [],
+        "semantic_query": "Skincare products from Drunk Elephant",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P473304",
+          "P471761",
+          "P454120",
+          "P403818",
+          "P392249"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "parse_latency_s": 0.02
+      },
+      "answer": {
+        "status": "generated",
+        "attempts": 1,
+        "latency_s": 0.0,
+        "message": "Answer passed grounding checks.",
+        "grounding": {
+          "unknown_prices": [],
+          "unknown_product_ids": [],
+          "unknown_ratings": [],
+          "recommends_when_no_results": false
+        },
+        "text": "Here are the Drunk Elephant skincare products in the loaded dataset:\n\n- **O-Bloos Rosi Glow Drops [P473304]** is $38.00 in the dataset, rated 3.69/5, in stock, and sized 1oz/ 30ml. There are no customer reviews for this product in our loaded dataset partition. The dataset notes the product record lists 157 reviews on Sephora when collected, but those are in review partitions we did not load.\n\n- **Call It A Night Glycolic Serum + Moisturizer duo [P471761]** is $28.00 in the dataset, rated 4.39/5, and listed as out of stock. The loaded dataset has 112 reviews: 91 positive, 15 mixed, and 6 critical, with 87% recommending it. One reviewer with dry skin said it exfoliated without tingle or burning, while one reviewer with combination skin said it was an expensive stocking stuffer and wished it were less expensive for the quality. Another reviewer with combination skin said they saw no results and felt it was a waste of money.\n\n- **F-Balm Electrolyte Waterfacial Mask [P454120]** is $54.00 in the dataset, rated 4.17/5, in stock, and sized 1.69 oz/ 50 mL. There are no customer reviews for this product in our loaded dataset partition. The dataset notes the product record lists 1105 reviews on Sephora when collected, but those are in review partitions we did not load.\n\n- **Lippe Balm [P403818]** is $18.00 in the dataset, rated 3.74/5, in stock, and sized 0.13 oz/ 3.8 g. There are no customer reviews for this product in our loaded dataset partition. The dataset notes the product record lists 1901 reviews on Sephora when collected, but those are in review partitions we did not load.\n\n- **JuJu Exfoliating Bar [P392249]** is $28.00 in the dataset, rated 4.47/5, in stock, and sized 4 oz/ 120 g. There are no customer reviews for this product in our loaded dataset partition. The dataset notes the product record lists 386 reviews on Sephora when collected, but those are in review partitions we did not load."
+      }
+    },
+    {
+      "id": "Q08",
+      "query": "Hydrating oil-free gel moisturizer under $30",
+      "rule": {
+        "parser_used": "rule_based",
+        "constraints": [
+          "price <= $30",
+          "category: Skincare > Moisturizers OR Skincare > Night Creams",
+          "attribute: Oil Free"
+        ],
+        "skin_types": [],
+        "semantic_query": "hydrating oil-free gel moisturizer",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P500094",
+          "P479125",
+          "P469517",
+          "P440493",
+          "P480166"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.6,
+          "MRR": 1.0,
+          "nDCG@5": 0.9686152031181796
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 3,
+          "critical_shown": 3
+        },
+        "parse_latency_s": 0.0
+      },
+      "llm": {
+        "parser_used": "llm",
+        "constraints": [
+          "price <= $30",
+          "category: Skincare > Moisturizers OR Skincare > Night Creams",
+          "attribute: Oil Free"
+        ],
+        "skin_types": [],
+        "semantic_query": "Hydrating oil-free gel moisturizer under $30",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P500094",
+          "P479125",
+          "P440493",
+          "P469517",
+          "P480166"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.6,
+          "MRR": 1.0,
+          "nDCG@5": 0.9686152031181796
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 3,
+          "critical_shown": 3
+        },
+        "parse_latency_s": 0.01
+      },
+      "answer": {
+        "status": "generated",
+        "attempts": 1,
+        "latency_s": 11.37,
+        "message": "Answer passed grounding checks.",
+        "grounding": {
+          "unknown_prices": [],
+          "unknown_product_ids": [],
+          "unknown_ratings": [],
+          "recommends_when_no_results": false
+        },
+        "text": "From the loaded dataset, these oil-free moisturizers are under $30:\n\n- **Hydrating Oil-Free Gel Moisturizer [P500094]** \u2014 Price in the dataset: **$25.00**; rating in the dataset: **4.12/5**; size: **1.7 oz / 50 mL**. Listing facts include hyaluronic acid, hydrating, fragrance-free, and best for dry, combination, or normal skin. There are **0 customer reviews** in our loaded dataset, so no reviewer sentiment is available.\n\n- **Mini Cloud Dew Oil-Free Gel Cream [P479125]** \u2014 Price in the dataset: **$17.00**; rating in the dataset: **4.46/5**; size: **0.5 oz/ 15 mL**. Listing facts include hydrating, plumping, and good for dryness. There are **0 customer reviews** in our loaded dataset.\n\n- **Oil Free Moisturizer Broad Spectrum SPF 30 [P440493]** \u2014 Price in the dataset: **$28.00**; rating in the dataset: **3.65/5**; size: **2 oz/ 59 mL**. Of **31 loaded reviews**, **18 positive**, **7 mixed**, and **6 critical**; **55%** of reviewers who answered recommended it. One reviewer with dry skin reported eye irritation, one with combination skin said it moisturized without making skin oily, and one with oily skin said it felt watery and not hydrating enough.\n\n- **CLEAR Oil-Free Moisturizer [P469517]** \u2014 Price in the dataset: **$29.00**; rating in the dataset: **4.53/5**; size: **2 oz/ 60 mL**. Of **90 loaded reviews**, **81 positive**, **3 mixed**, and **6 critical**; **91%** recommended it. Reviewers described it as a lightweight gel-cream that felt hydrating, but one combination-skin reviewer said it sat on top and felt wet, and one dry-skin reviewer said it did not do much for them.\n\n- **Mini Hydra Vizor Invisible Moisturizer Broad Spectrum SPF 30 Sunscreen with Niacinamide [P480166]** \u2014 Price in the dataset: **$25.00**; rating in the dataset: **3.79/5**; size: **1 oz/ 30 mL**. Of **14 loaded reviews**, **8 positive**, **2 mixed**, and **4 critical**; **71%** recommended it. Reviewers mentioned heavy fragrance and lack of benefit for some dry-skin users, while one reviewer with dry skin said it was a light SPF moisturizer they loved."
+      }
+    },
+    {
+      "id": "Q09",
+      "query": "What do customers say about the Tata Harper Repairative Anti-Aging Moisturizer?",
+      "rule": {
+        "parser_used": "rule_based",
+        "constraints": [],
+        "skin_types": [],
+        "semantic_query": "overall experience, results, texture, scent, pros and cons",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P379709"
+        ],
+        "metrics": {
+          "correct_outcome": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "parse_latency_s": 0.0
+      },
+      "llm": {
+        "parser_used": "llm",
+        "constraints": [],
+        "skin_types": [],
+        "semantic_query": "Tata Harper Repairative Anti-Aging Moisturizer, anti-aging face moisturizer; customer reviews and feedback",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P379709"
+        ],
+        "metrics": {
+          "correct_outcome": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 1,
+          "critical_shown": 1
+        },
+        "parse_latency_s": 0.01
+      },
+      "answer": {
+        "status": "generated",
+        "attempts": 1,
+        "latency_s": 0.0,
+        "message": "Answer passed grounding checks.",
+        "grounding": {
+          "unknown_prices": [],
+          "unknown_product_ids": [],
+          "unknown_ratings": [],
+          "recommends_when_no_results": false
+        },
+        "text": "Customers\u2019 feedback in the dataset for Tata Harper Repairative Anti-Aging Moisturizer [P379709] is mixed: among 136 loaded reviews, 73 are positive (4\u20135 stars), 18 are mixed (3 stars), and 45 are critical (1\u20132 stars), with 53% recommending it; the rating in the dataset is 3.41/5. Positive reviewers said it feels hydrating, lightweight, fast-absorbing, luxurious, and glow-giving, with some praising the scent and packaging. Mixed and critical feedback included one reviewer with combination skin saying it was not moisturizing enough for dry skin and needed a serum or oil underneath, and one reviewer with normal skin saying the smell was off-putting and the results and price were not worth it."
+      }
+    },
+    {
+      "id": "Q10",
+      "query": "Tatcha moisturizer under $10",
+      "rule": {
+        "parser_used": "rule_based",
+        "constraints": [
+          "price <= $10",
+          "category: Skincare > Moisturizers OR Skincare > Night Creams",
+          "brand: Tatcha"
+        ],
+        "skin_types": [],
+        "semantic_query": "tatcha moisturizer",
+        "guard_removals": [],
+        "status": "no_results",
+        "returned_ids": [],
+        "metrics": {
+          "correct_outcome": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "parse_latency_s": 0.0
+      },
+      "llm": {
+        "parser_used": "llm",
+        "constraints": [
+          "price <= $10",
+          "category: Skincare > Moisturizers OR Skincare > Night Creams",
+          "brand: Tatcha"
+        ],
+        "skin_types": [],
+        "semantic_query": "Tatcha moisturizer",
+        "guard_removals": [],
+        "status": "no_results",
+        "returned_ids": [],
+        "metrics": {
+          "correct_outcome": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "parse_latency_s": 0.02
+      },
+      "answer": {
+        "status": "skipped",
+        "attempts": 0,
+        "latency_s": 0.0,
+        "message": "No products in the dataset satisfy all of your requirements (price <= $10; category: Skincare > Moisturizers OR Skincare > Night Creams; brand: Tatcha). The constraint that removed the last products was: price <= $10. Sephra does not relax your requirements automatically; try changing one of them.",
+        "grounding": null,
+        "text": null
+      }
+    },
+    {
+      "id": "Q11",
+      "query": "Face serum under $15",
+      "rule": {
+        "parser_used": "rule_based",
+        "constraints": [
+          "price <= $15",
+          "category: Skincare > Face Serums"
+        ],
+        "skin_types": [],
+        "semantic_query": "face serum",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P457442",
+          "P427412",
+          "P443830",
+          "P443845",
+          "P427416"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "parse_latency_s": 0.0
+      },
+      "llm": {
+        "parser_used": "llm",
+        "constraints": [
+          "price <= $15",
+          "category: Skincare > Face Serums"
+        ],
+        "skin_types": [],
+        "semantic_query": "Face serum for general skincare concerns",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P457442",
+          "P443830",
+          "P443843",
+          "P427412",
+          "P427416"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "parse_latency_s": 0.01
+      },
+      "answer": {
+        "status": "generated",
+        "attempts": 1,
+        "latency_s": 11.42,
+        "message": "Answer passed grounding checks.",
+        "grounding": {
+          "unknown_prices": [],
+          "unknown_product_ids": [],
+          "unknown_ratings": [],
+          "recommends_when_no_results": false
+        },
+        "text": "Here are the face serums under $15 in the dataset:\n\n- **SEPHORA COLLECTION Face Serum** [P457442] is listed at **$9.00** in the dataset, with a sale price of **$5.00** in the dataset, and is **1.0 oz/ 30 mL**. The dataset rating is **3.32/5**, and it is in stock in the snapshot. No customer reviews for this product are in the loaded dataset, so I can\u2019t summarize reviewer opinions.\n\n- **The INKEY List Polyglutamic Acid Hydrating Serum** [P443830] is **$14.99** in the dataset, **1 oz/ 30 mL**, and in stock in the snapshot. The dataset rating is **4.39/5**; listing highlights include good for dullness/uneven texture, dryness, and anti-aging. No customer reviews for this product are in the loaded dataset.\n\n- **The INKEY List Q10 Antioxidant Serum** [P443843] is **$9.99** in the dataset, **1 oz/ 30 mL**, and in stock in the snapshot. The dataset rating is **4.31/5**; listing highlights include good for loss of firmness, anti-aging, and dryness. No customer reviews for this product are in the loaded dataset.\n\n- **The Ordinary Alpha Arbutin 2% + HA Hyperpigmentation Serum** [P427412] is **$11.10** in the dataset, **1 oz/ 30 mL**, and in stock in the snapshot. The dataset rating is **4.04/5**; listing highlights include vegan, without silicones, alcohol free, and gluten free. No customer reviews for this product are in the loaded dataset.\n\n- **The Ordinary Caffeine 5% + EGCG Depuffing Eye Serum** [P427416] is **$8.90** in the dataset, **1 oz/ 30 mL**, and in stock in the snapshot. The dataset rating is **3.77/5**; listing highlights include vegan, community favorite, good for dark circles, oil free, and alcohol free. No customer reviews for this product are in the loaded dataset."
+      }
+    },
+    {
+      "id": "Q12",
+      "query": "Vitamin C serum for brightening",
+      "rule": {
+        "parser_used": "rule_based",
+        "constraints": [
+          "category: Skincare > Face Serums",
+          "ingredient: vitamin c"
+        ],
+        "skin_types": [],
+        "semantic_query": "vitamin c serum for brightening",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P467614",
+          "P500756",
+          "P474809",
+          "P456571",
+          "P418346"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "parse_latency_s": 0.0
+      },
+      "llm": {
+        "parser_used": "llm",
+        "constraints": [
+          "category: Skincare > Face Serums",
+          "ingredient: vitamin c"
+        ],
+        "skin_types": [],
+        "semantic_query": "Vitamin C serum for brightening",
+        "guard_removals": [
+          "Removed attribute 'Fragrance Free': not requested.",
+          "Removed ingredient 'niacinamide': not requested."
+        ],
+        "status": "ok",
+        "returned_ids": [
+          "P467614",
+          "P500756",
+          "P474809",
+          "P456571",
+          "P418346"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "parse_latency_s": 0.02
+      },
+      "answer": {
+        "status": "generated",
+        "attempts": 1,
+        "latency_s": 12.37,
+        "message": "Answer passed grounding checks.",
+        "grounding": {
+          "unknown_prices": [],
+          "unknown_product_ids": [],
+          "unknown_ratings": [],
+          "recommends_when_no_results": false
+        },
+        "text": "Here are the vitamin C face serums from the dataset:\n\n- **C Scription Vitamin C Brightening Serum** [P467614]: In the dataset, it is $120.00, rated 4.70/5, 1 oz/ 30 mL, and in stock in the dataset snapshot. The product name includes \u201cBrightening Serum.\u201d No customer reviews for this product are in our loaded dataset.\n\n- **10% Vitamin C Brightening Serum** [P500756]: In the dataset, it is $50.00, rated 4.68/5, 1.7 oz / 50 mL, and in stock in the dataset snapshot. Listing highlights include Vegan, Good for: Dullness/Uneven Texture, Vitamin C, Clean at Sephora, Fragrance Free, Cruelty-Free. No customer reviews for this product are in our loaded dataset.\n\n- **Blue Algae Vitamin C Skinclarity Brightening Serum** [P474809]: In the dataset, it is $72.00, rated 4.61/5, 1 oz/ 30 mL, and in stock in the dataset snapshot. The product name includes \u201cBrightening Serum.\u201d No customer reviews for this product are in our loaded dataset.\n\n- **Vitamin C Glycolic Brightening Serum** [P456571]: In the dataset, it is $88.00, rated 4.26/5, 1 oz/ 30 mL, and in stock in the dataset snapshot. Listing highlights include Good for: Dark Circles, Good for: Dullness/Uneven Texture, AHA/Glycolic Acid, Vitamin C, Cruelty-Free. No customer reviews for this product are in our loaded dataset.\n\n- **C.E.O. 15% Vitamin C Brightening Serum** [P418346]: In the dataset, it is $85.00, rated 4.10/5, 1 oz/ 30 mL, and in stock in the dataset snapshot. Listing highlights include Good for: Dullness/Uneven Texture, Community Favorite, Vitamin C, Good for: Dark Circles, Good for: Anti-Aging, Cruelty-Free. No customer reviews for this product are in our loaded dataset."
+      }
+    },
+    {
+      "id": "Q13",
+      "query": "I need something nice",
+      "rule": {
+        "parser_used": "rule_based",
+        "constraints": [],
+        "skin_types": [],
+        "semantic_query": "something nice",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P503726",
+          "P476529",
+          "P433173",
+          "P470529",
+          "P503634"
+        ],
+        "metrics": {},
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "parse_latency_s": 0.01
+      },
+      "llm": {
+        "parser_used": "llm",
+        "constraints": [],
+        "skin_types": [],
+        "semantic_query": "something nice",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P503726",
+          "P476529",
+          "P433173",
+          "P470529",
+          "P503634"
+        ],
+        "metrics": {},
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "parse_latency_s": 0.02
+      },
+      "answer": {
+        "status": "generated",
+        "attempts": 1,
+        "latency_s": 0.0,
+        "message": "Answer passed grounding checks.",
+        "grounding": {
+          "unknown_prices": [],
+          "unknown_product_ids": [],
+          "unknown_ratings": [],
+          "recommends_when_no_results": false
+        },
+        "text": "Since you didn\u2019t specify a category, here are five options from the static dataset snapshot; prices and ratings are in the dataset, and none have customer reviews in the loaded review partition.\n\n- **Sunday Riley B3 Nice 10% Niacinamide Serum [P503726]**: $65.00, 4.73/5, 1 oz / 30 mL, in stock. Listing highlights include niacinamide and good-for notes for redness, pores, and dark spots; best for oily, combo, and normal skin. No customer reviews for this product in the loaded dataset.\n\n- **JVN Nurture Deep Moisture Mask [P476529]**: $24.00, 3.74/5, 5 oz/ 147 mL, in stock. Listing highlights include damage, color care, dryness, increased shine, and no silicones. No customer reviews for this product in the loaded dataset.\n\n- **Olaplex No. 5 Bond Maintenance Conditioner [P433173]**: $30.00, 4.06/5, 8.5 oz/ 250 mL, in stock. Listing highlights include damage, color care, all hair types, and dryness; the mini variant [P443331] is $15.00, 3.88/5, with 0 loaded reviews. No customer reviews for the main product in the loaded dataset.\n\n- **Glow Recipe Avocado Soothing Skin Barrier Serum with Ceramides [P470529]**: $45.00, 4.47/5, 1 oz/ 30 mL, in stock. Listing highlights include redness, dullness/uneven texture, hydration, and fragrance-free; ingredients include ceramides and niacinamide. No customer reviews for this product in the loaded dataset.\n\n- **Glow Recipe Avocado Ceramide Moisture Barrier Cleanser [P503634]**: $28.00, 4.44/5, 5 oz / 150 mL, in stock. Listing highlights include redness, dullness/uneven texture, hydration, and dryness; best for dry, combo, and normal skin. No customer reviews for this product in the loaded dataset."
+      }
+    },
+    {
+      "id": "Q14",
+      "query": "Compare La Mer The Moisturizing Cool Gel Cream and Tata Harper Repairative Anti-Aging Moisturizer",
+      "rule": {
+        "parser_used": "rule_based",
+        "constraints": [],
+        "skin_types": [],
+        "semantic_query": "compare la mer the moisturizing cool gel cream and tata harper repairative anti-aging moisturizer",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P429637",
+          "P379709"
+        ],
+        "metrics": {
+          "correct_outcome": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 2,
+          "critical_shown": 2
+        },
+        "parse_latency_s": 0.0
+      },
+      "llm": {
+        "parser_used": "llm",
+        "constraints": [],
+        "skin_types": [],
+        "semantic_query": "Compare La Mer The Moisturizing Cool Gel Cream and Tata Harper Repairative Anti-Aging Moisturizer",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P429637",
+          "P379709"
+        ],
+        "metrics": {
+          "correct_outcome": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 2,
+          "critical_shown": 2
+        },
+        "parse_latency_s": 0.01
+      },
+      "answer": {
+        "status": "generated",
+        "attempts": 1,
+        "latency_s": 0.0,
+        "message": "Answer passed grounding checks.",
+        "grounding": {
+          "unknown_prices": [],
+          "unknown_product_ids": [],
+          "unknown_ratings": [],
+          "recommends_when_no_results": false
+        },
+        "text": "Both are in stock in the dataset snapshot, and all prices and ratings below are in the dataset.\n\nLa Mer The Moisturizing Cool Gel Cream [P429637] is $200.00 for 1 oz/ 30 mL with a 3.68/5 rating. The listing positions it as best for oily skin and good for dullness/uneven texture, and notes it is without sulfates SLS & SLES, parabens, and phthalates; the truncated ingredient list leads with Cyclopentasiloxane, Algae (Seaweed) Extract, Glycerin, and Dimethicone. Across all 137 loaded reviews, 92 were positive (4-5 stars), 8 mixed (3), and 37 critical (1-2), with 67% of reviewers who answered recommending it. Reviewer opinions vary: one combination-skin reviewer called it lightweight and refreshing in the morning, while a normal-skin reviewer said it left skin sticky and tacky and felt unabsorbed, and a 3-star reviewer said it made their dry skin a little acne prone.\n\nTata Harper Repairative Anti-Aging Moisturizer [P379709] is $130.00 for 1.7 oz/ 50 mL with a 3.41/5 rating. The listing highlights Vegan, Hyaluronic Acid, Clean at Sephora, Cruelty-Free, and good for anti-aging and dryness; the truncated ingredient list includes Aloe Barbadensis Leaf Juice, Mangifera Indica (Mango) Seed Butter, Carthamus Tinctorius (Safflower) Oleosomes, Aqua/Water/Eau, Glycerin, Simmondsia Chinensis (Jojoba) Seed Oil, and Mel/Honey/Miel. Of all 136 loaded reviews, 73 were positive, 18 mixed, and 45 critical, with 53% recommending it. One combination-skin reviewer praised it as hydrating and fast absorbing with a divine scent, and another said it repaired dehydrated skin, but a dry-skin reviewer called it overpriced and not moisturizing enough, needing another moisturizer on top, and described the smell as faintly like a bathroom airspray; a 3-star reviewer also mentioned it could clog when worn under SPF during the day.\n\nOn the dataset numbers, the La Mer costs more per ounce but rates slightly higher and is recommended by more reviewers (67% vs 53%), while the Tata Harper is the larger size and is listed for anti-aging and dryness rather than oily skin."
+      }
+    },
+    {
+      "id": "Q15",
+      "query": "Serum with hyaluronic acid",
+      "rule": {
+        "parser_used": "rule_based",
+        "constraints": [
+          "category: Skincare > Face Serums",
+          "ingredient: hyaluronic acid"
+        ],
+        "skin_types": [],
+        "semantic_query": "serum with hyaluronic acid",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P500746",
+          "P443845",
+          "P481697",
+          "P471025",
+          "P502200"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 2,
+          "critical_shown": 2
+        },
+        "parse_latency_s": 0.0
+      },
+      "llm": {
+        "parser_used": "llm",
+        "constraints": [
+          "category: Skincare > Face Serums",
+          "ingredient: hyaluronic acid"
+        ],
+        "skin_types": [],
+        "semantic_query": "Face serum with hyaluronic acid",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P476675",
+          "P443845",
+          "P504795",
+          "P481697",
+          "P500746"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 2,
+          "critical_shown": 2
+        },
+        "parse_latency_s": 0.02
+      },
+      "answer": {
+        "status": "rate_limited",
+        "attempts": 1,
+        "latency_s": 9.68,
+        "message": "The free LLM tier is rate-limited right now (OpenRouter rate limit reached: Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day: https://openrouter.ai/settings/credits?utm_source=api&utm_campaign=free_daily_limit). The retrieved evidence is shown below.",
+        "grounding": null,
+        "text": null
+      }
+    },
+    {
+      "id": "Q16",
+      "query": "Vegan mascara",
+      "rule": {
+        "parser_used": "rule_based",
+        "constraints": [
+          "category: Makeup > Mascara",
+          "attribute: Vegan"
+        ],
+        "skin_types": [],
+        "semantic_query": "vegan mascara",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P472179",
+          "P479649",
+          "P466443",
+          "P476724",
+          "P478296"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "parse_latency_s": 0.0
+      },
+      "llm": {
+        "parser_used": "llm",
+        "constraints": [
+          "category: Makeup > Mascara",
+          "attribute: Vegan"
+        ],
+        "skin_types": [],
+        "semantic_query": "Vegan mascara for lengthening and defining lashes",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P388950",
+          "P475930",
+          "P479643",
+          "P476920",
+          "P500481"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "parse_latency_s": 0.02
+      },
+      "answer": {
+        "status": "rate_limited",
+        "attempts": 1,
+        "latency_s": 9.61,
+        "message": "The free LLM tier is rate-limited right now (OpenRouter rate limit reached: Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day: https://openrouter.ai/settings/credits?utm_source=api&utm_campaign=free_daily_limit). The retrieved evidence is shown below.",
+        "grounding": null,
+        "text": null
+      }
+    },
+    {
+      "id": "Q17",
+      "query": "Hair oil for frizz",
+      "rule": {
+        "parser_used": "rule_based",
+        "constraints": [
+          "category: Hair > Hair Oil"
+        ],
+        "skin_types": [],
+        "semantic_query": "hair oil for frizz",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P448445",
+          "P479990",
+          "P501961",
+          "P388629",
+          "P501315"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "parse_latency_s": 0.0
+      },
+      "llm": {
+        "parser_used": "llm",
+        "constraints": [
+          "category: Hair > Hair Oil"
+        ],
+        "skin_types": [],
+        "semantic_query": "hair oil that smooths and controls frizz",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P448445",
+          "P501315",
+          "P479990",
+          "P501961",
+          "P504117"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "parse_latency_s": 0.02
+      },
+      "answer": {
+        "status": "rate_limited",
+        "attempts": 1,
+        "latency_s": 9.88,
+        "message": "The free LLM tier is rate-limited right now (OpenRouter rate limit reached: Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day: https://openrouter.ai/settings/credits?utm_source=api&utm_campaign=free_daily_limit). The retrieved evidence is shown below.",
+        "grounding": null,
+        "text": null
+      }
+    },
+    {
+      "id": "Q18",
+      "query": "Body lotion for very dry skin",
+      "rule": {
+        "parser_used": "rule_based",
+        "constraints": [
+          "category: Bath & Body > Body Lotions & Body Oils"
+        ],
+        "skin_types": [
+          "dry"
+        ],
+        "semantic_query": "body lotion for very dry skin",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P469450",
+          "P504459",
+          "P456217",
+          "P474379",
+          "P481721"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "parse_latency_s": 0.0
+      },
+      "llm": {
+        "parser_used": "llm",
+        "constraints": [
+          "category: Bath & Body > Body Lotions & Body Oils"
+        ],
+        "skin_types": [
+          "dry"
+        ],
+        "semantic_query": "Rich body lotion for very dry skin, deeply moisturizing",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P469450",
+          "P456217",
+          "P461158",
+          "P504459",
+          "P238001"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 1.0,
+          "MRR": 1.0,
+          "nDCG@5": 1.0
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "parse_latency_s": 0.02
+      },
+      "answer": {
+        "status": "rate_limited",
+        "attempts": 1,
+        "latency_s": 9.72,
+        "message": "The free LLM tier is rate-limited right now (OpenRouter rate limit reached: Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day: https://openrouter.ai/settings/credits?utm_source=api&utm_campaign=free_daily_limit). The retrieved evidence is shown below.",
+        "grounding": null,
+        "text": null
+      }
+    },
+    {
+      "id": "Q19",
+      "query": "Long-lasting matte lipstick",
+      "rule": {
+        "parser_used": "rule_based",
+        "constraints": [
+          "category: Makeup > Lipstick OR Makeup > Liquid Lipstick"
+        ],
+        "skin_types": [],
+        "semantic_query": "long-lasting matte lipstick",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P501215",
+          "P454512",
+          "P501583",
+          "P407636",
+          "P431511"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.8,
+          "MRR": 1.0,
+          "nDCG@5": 0.9125299483251055
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "parse_latency_s": 0.01
+      },
+      "llm": {
+        "parser_used": "llm",
+        "constraints": [
+          "category: Makeup > Lipstick OR Makeup > Liquid Lipstick"
+        ],
+        "skin_types": [],
+        "semantic_query": "Long-lasting matte lipstick",
+        "guard_removals": [
+          "Removed attribute 'Alcohol Free': not requested.",
+          "Removed attribute 'Cruelty-Free': not requested.",
+          "Removed attribute 'Gluten Free': not requested.",
+          "Removed attribute 'Vegan': not requested."
+        ],
+        "status": "ok",
+        "returned_ids": [
+          "P501215",
+          "P454512",
+          "P501583",
+          "P407636",
+          "P431511"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.8,
+          "MRR": 1.0,
+          "nDCG@5": 0.9125299483251055
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 0,
+          "critical_shown": 0
+        },
+        "parse_latency_s": 0.02
+      },
+      "answer": {
+        "status": "rate_limited",
+        "attempts": 1,
+        "latency_s": 9.64,
+        "message": "The free LLM tier is rate-limited right now (OpenRouter rate limit reached: Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day: https://openrouter.ai/settings/credits?utm_source=api&utm_campaign=free_daily_limit). The retrieved evidence is shown below.",
+        "grounding": null,
+        "text": null
+      }
+    },
+    {
+      "id": "Q20",
+      "query": "Gentle cleanser for sensitive skin",
+      "rule": {
+        "parser_used": "rule_based",
+        "constraints": [
+          "category: Skincare > Face Wash & Cleansers OR Men > Face Wash"
+        ],
+        "skin_types": [
+          "sensitive"
+        ],
+        "semantic_query": "gentle cleanser for sensitive skin",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P296413",
+          "P483696",
+          "P232902",
+          "P427536",
+          "P500614"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.2,
+          "MRR": 1.0,
+          "nDCG@5": 0.4759908431563517
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 2,
+          "critical_shown": 2
+        },
+        "parse_latency_s": 0.01
+      },
+      "llm": {
+        "parser_used": "llm",
+        "constraints": [
+          "category: Skincare > Face Wash & Cleansers OR Men > Face Wash"
+        ],
+        "skin_types": [
+          "sensitive"
+        ],
+        "semantic_query": "gentle cleanser for sensitive skin",
+        "guard_removals": [],
+        "status": "ok",
+        "returned_ids": [
+          "P296413",
+          "P483696",
+          "P232902",
+          "P427536",
+          "P500614"
+        ],
+        "metrics": {
+          "P@5": 1.0,
+          "strictP@5": 0.2,
+          "MRR": 1.0,
+          "nDCG@5": 0.4759908431563517
+        },
+        "checks": {
+          "hard_filter_violations": 0,
+          "duplicate_products": 0,
+          "duplicate_families": 0,
+          "misattributed_reviews": 0,
+          "zero_review_without_note": 0,
+          "products_with_critical_available": 2,
+          "critical_shown": 2
+        },
+        "parse_latency_s": 0.02
+      },
+      "answer": {
+        "status": "rate_limited",
+        "attempts": 1,
+        "latency_s": 9.6,
+        "message": "The free LLM tier is rate-limited right now (OpenRouter rate limit reached: Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day: https://openrouter.ai/settings/credits?utm_source=api&utm_campaign=free_daily_limit). The retrieved evidence is shown below.",
+        "grounding": null,
+        "text": null
+      }
+    }
+  ]
+}

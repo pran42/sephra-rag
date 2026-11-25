@@ -1,0 +1,1577 @@
+[
+  {
+    "id": "Q01",
+    "type": "dry_skin_budget",
+    "query": "Moisturizer for dry skin under $30 that is hydrating and not greasy",
+    "latency_seconds": 0.187,
+    "products": [
+      {
+        "product_id": "P411403",
+        "brand_name": "IT Cosmetics",
+        "primary_category": "Skincare",
+        "secondary_category": "Moisturizers",
+        "price_usd": 20.0,
+        "rating": 4.62,
+        "distance": 0.21599215269088745,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P500094",
+        "brand_name": "Community Sixty-Six",
+        "primary_category": "Skincare",
+        "secondary_category": "Moisturizers",
+        "price_usd": 25.0,
+        "rating": 4.1245,
+        "distance": 0.21698784828186035,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P427641",
+        "brand_name": "IT Cosmetics",
+        "primary_category": "Skincare",
+        "secondary_category": "Moisturizers",
+        "price_usd": 20.0,
+        "rating": 3.6809,
+        "distance": 0.22860074043273926,
+        "review_count": 47,
+        "reviews": [
+          {
+            "review_id": "review_37086",
+            "product_id": "P427641",
+            "rating": 5
+          },
+          {
+            "review_id": "review_37071",
+            "product_id": "P427641",
+            "rating": 5
+          },
+          {
+            "review_id": "review_37092",
+            "product_id": "P427641",
+            "rating": 1
+          }
+        ]
+      },
+      {
+        "product_id": "P441101",
+        "brand_name": "Tatcha",
+        "primary_category": "Skincare",
+        "secondary_category": "Moisturizers",
+        "price_usd": 70.0,
+        "rating": 4.1023,
+        "distance": 0.22935640811920166,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P500120",
+        "brand_name": "Community Sixty-Six",
+        "primary_category": "Skincare",
+        "secondary_category": "Moisturizers",
+        "price_usd": 25.0,
+        "rating": 3.5,
+        "distance": 0.24024033546447754,
+        "review_count": 10,
+        "reviews": [
+          {
+            "review_id": "review_48566",
+            "product_id": "P500120",
+            "rating": 5
+          },
+          {
+            "review_id": "review_48559",
+            "product_id": "P500120",
+            "rating": 5
+          },
+          {
+            "review_id": "review_48564",
+            "product_id": "P500120",
+            "rating": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Q02",
+    "type": "fragrance_free",
+    "query": "Fragrance-free skincare products",
+    "latency_seconds": 0.07,
+    "products": [
+      {
+        "product_id": "P483069",
+        "brand_name": "Anastasia Beverly Hills",
+        "primary_category": "Makeup",
+        "secondary_category": "Eye",
+        "price_usd": 29.0,
+        "rating": 4.1429,
+        "distance": 0.19610798358917236,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P478523",
+        "brand_name": "NUDESTIX",
+        "primary_category": "Mini Size",
+        "secondary_category": "Makeup",
+        "price_usd": 29.0,
+        "rating": 4.3026,
+        "distance": 0.24233722686767578,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P482659",
+        "brand_name": "Anastasia Beverly Hills",
+        "primary_category": "Makeup",
+        "secondary_category": "Makeup Palettes",
+        "price_usd": 60.0,
+        "rating": 4.703,
+        "distance": 0.2489546537399292,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P501963",
+        "brand_name": "Curlsmith",
+        "primary_category": "Hair",
+        "secondary_category": "Value & Gift Sets",
+        "price_usd": 65.0,
+        "rating": 4.875,
+        "distance": 0.2522754669189453,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P483653",
+        "brand_name": "CLINIQUE",
+        "primary_category": "Makeup",
+        "secondary_category": "Eye",
+        "price_usd": 45.0,
+        "rating": 5.0,
+        "distance": 0.25286203622817993,
+        "review_count": 0,
+        "reviews": []
+      }
+    ]
+  },
+  {
+    "id": "Q03",
+    "type": "oily_lightweight",
+    "query": "Lightweight moisturizer for oily skin",
+    "latency_seconds": 0.207,
+    "products": [
+      {
+        "product_id": "P476516",
+        "brand_name": "Fenty Skin",
+        "primary_category": "Bath & Body",
+        "secondary_category": "Body Moisturizers",
+        "price_usd": 23.0,
+        "rating": 4.1552,
+        "distance": 0.2506992816925049,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P476430",
+        "brand_name": "Fenty Skin",
+        "primary_category": "Bath & Body",
+        "secondary_category": "Body Moisturizers",
+        "price_usd": 39.0,
+        "rating": 4.6522,
+        "distance": 0.2516891360282898,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P504810",
+        "brand_name": "Glossier",
+        "primary_category": "Skincare",
+        "secondary_category": "Moisturizers",
+        "price_usd": 25.0,
+        "rating": 4.6667,
+        "distance": 0.252565860748291,
+        "review_count": 13,
+        "reviews": [
+          {
+            "review_id": "review_48659",
+            "product_id": "P504810",
+            "rating": 5
+          },
+          {
+            "review_id": "review_48656",
+            "product_id": "P504810",
+            "rating": 5
+          },
+          {
+            "review_id": "review_48661",
+            "product_id": "P504810",
+            "rating": 5
+          }
+        ]
+      },
+      {
+        "product_id": "P504784",
+        "brand_name": "Glossier",
+        "primary_category": "Skincare",
+        "secondary_category": "Moisturizers",
+        "price_usd": 24.0,
+        "rating": 4.2143,
+        "distance": 0.2571483254432678,
+        "review_count": 17,
+        "reviews": [
+          {
+            "review_id": "review_47438",
+            "product_id": "P504784",
+            "rating": 4
+          },
+          {
+            "review_id": "review_47439",
+            "product_id": "P504784",
+            "rating": 5
+          },
+          {
+            "review_id": "review_47447",
+            "product_id": "P504784",
+            "rating": 5
+          }
+        ]
+      },
+      {
+        "product_id": "P500094",
+        "brand_name": "Community Sixty-Six",
+        "primary_category": "Skincare",
+        "secondary_category": "Moisturizers",
+        "price_usd": 25.0,
+        "rating": 4.1245,
+        "distance": 0.2602900266647339,
+        "review_count": 0,
+        "reviews": []
+      }
+    ]
+  },
+  {
+    "id": "Q04",
+    "type": "sunscreen_budget",
+    "query": "Sunscreen under $25",
+    "latency_seconds": 0.136,
+    "products": [
+      {
+        "product_id": "P500993",
+        "brand_name": "N\u00e9cessaire",
+        "primary_category": "Skincare",
+        "secondary_category": "Sunscreen",
+        "price_usd": 25.0,
+        "rating": 4.5322,
+        "distance": 0.21501684188842773,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P482321",
+        "brand_name": "Supergoop!",
+        "primary_category": "Skincare",
+        "secondary_category": "Sunscreen",
+        "price_usd": 22.0,
+        "rating": 3.9473,
+        "distance": 0.22065365314483643,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P482061",
+        "brand_name": "Peter Thomas Roth",
+        "primary_category": "Skincare",
+        "secondary_category": "Sunscreen",
+        "price_usd": 38.0,
+        "rating": 4.4746,
+        "distance": 0.2259535789489746,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P454391",
+        "brand_name": "Supergoop!",
+        "primary_category": "Skincare",
+        "secondary_category": "Sunscreen",
+        "price_usd": 21.0,
+        "rating": 3.3684,
+        "distance": 0.22666716575622559,
+        "review_count": 19,
+        "reviews": [
+          {
+            "review_id": "review_45819",
+            "product_id": "P454391",
+            "rating": 4
+          },
+          {
+            "review_id": "review_45817",
+            "product_id": "P454391",
+            "rating": 3
+          },
+          {
+            "review_id": "review_45815",
+            "product_id": "P454391",
+            "rating": 2
+          }
+        ]
+      },
+      {
+        "product_id": "P415965",
+        "brand_name": "NARS",
+        "primary_category": "Makeup",
+        "secondary_category": "Face",
+        "price_usd": 36.0,
+        "rating": 4.0353,
+        "distance": 0.22908413410186768,
+        "review_count": 0,
+        "reviews": []
+      }
+    ]
+  },
+  {
+    "id": "Q05",
+    "type": "highly_rated_shampoo",
+    "query": "Highly rated shampoo for damaged hair",
+    "latency_seconds": 0.061,
+    "products": [
+      {
+        "product_id": "P461610",
+        "brand_name": "Pureology",
+        "primary_category": "Hair",
+        "secondary_category": "Shampoo & Conditioner",
+        "price_usd": 36.0,
+        "rating": 4.6766,
+        "distance": 0.208360493183136,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P448733",
+        "brand_name": "Virtue",
+        "primary_category": "Hair",
+        "secondary_category": "Shampoo & Conditioner",
+        "price_usd": 40.0,
+        "rating": 4.183,
+        "distance": 0.2275937795639038,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P481735",
+        "brand_name": "shu uemura",
+        "primary_category": "Hair",
+        "secondary_category": "Shampoo & Conditioner",
+        "price_usd": 52.0,
+        "rating": 4.3239,
+        "distance": 0.23208951950073242,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P461611",
+        "brand_name": "Pureology",
+        "primary_category": "Hair",
+        "secondary_category": "Shampoo & Conditioner",
+        "price_usd": 36.0,
+        "rating": 4.6966,
+        "distance": 0.23443609476089478,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P403934",
+        "brand_name": "shu uemura",
+        "primary_category": "Hair",
+        "secondary_category": "Shampoo & Conditioner",
+        "price_usd": 52.0,
+        "rating": 4.2778,
+        "distance": 0.23666125535964966,
+        "review_count": 0,
+        "reviews": []
+      }
+    ]
+  },
+  {
+    "id": "Q06",
+    "type": "perfume_everyday",
+    "query": "Perfume for everyday use",
+    "latency_seconds": 0.055,
+    "products": [
+      {
+        "product_id": "P479499",
+        "brand_name": "Maison Margiela",
+        "primary_category": "Fragrance",
+        "secondary_category": "Women",
+        "price_usd": 35.0,
+        "rating": 3.9856,
+        "distance": 0.3204479217529297,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P479498",
+        "brand_name": "Maison Margiela",
+        "primary_category": "Fragrance",
+        "secondary_category": "Women",
+        "price_usd": 160.0,
+        "rating": 3.9856,
+        "distance": 0.32612621784210205,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P479731",
+        "brand_name": "By Rosie Jane",
+        "primary_category": "Bath & Body",
+        "secondary_category": "Bath & Shower",
+        "price_usd": 25.0,
+        "rating": 4.1,
+        "distance": 0.3279479742050171,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P501252",
+        "brand_name": "DedCool",
+        "primary_category": "Fragrance",
+        "secondary_category": "Women",
+        "price_usd": 30.0,
+        "rating": 4.6522,
+        "distance": 0.32951033115386963,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P428677",
+        "brand_name": "MAKE UP FOR EVER",
+        "primary_category": "Makeup",
+        "secondary_category": "Face",
+        "price_usd": 42.0,
+        "rating": 4.1087,
+        "distance": 0.3296698331832886,
+        "review_count": 0,
+        "reviews": []
+      }
+    ]
+  },
+  {
+    "id": "Q07",
+    "type": "brand",
+    "query": "Show me skincare products from Drunk Elephant",
+    "latency_seconds": 0.254,
+    "products": [
+      {
+        "product_id": "P471761",
+        "brand_name": "Drunk Elephant",
+        "primary_category": "Skincare",
+        "secondary_category": "Value & Gift Sets",
+        "price_usd": 28.0,
+        "rating": 4.3874,
+        "distance": 0.17989778518676758,
+        "review_count": 112,
+        "reviews": [
+          {
+            "review_id": "review_11865",
+            "product_id": "P471761",
+            "rating": 5
+          },
+          {
+            "review_id": "review_11827",
+            "product_id": "P471761",
+            "rating": 5
+          },
+          {
+            "review_id": "review_11801",
+            "product_id": "P471761",
+            "rating": 3
+          }
+        ]
+      },
+      {
+        "product_id": "P501591",
+        "brand_name": "Drunk Elephant",
+        "primary_category": "Skincare",
+        "secondary_category": "Value & Gift Sets",
+        "price_usd": 74.0,
+        "rating": 4.4444,
+        "distance": 0.20183277130126953,
+        "review_count": 10,
+        "reviews": [
+          {
+            "review_id": "review_48603",
+            "product_id": "P501591",
+            "rating": 5
+          },
+          {
+            "review_id": "review_48601",
+            "product_id": "P501591",
+            "rating": 4
+          },
+          {
+            "review_id": "review_48597",
+            "product_id": "P501591",
+            "rating": 5
+          }
+        ]
+      },
+      {
+        "product_id": "P454120",
+        "brand_name": "Drunk Elephant",
+        "primary_category": "Skincare",
+        "secondary_category": "Masks",
+        "price_usd": 54.0,
+        "rating": 4.1665,
+        "distance": 0.2106107473373413,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P426836",
+        "brand_name": "Drunk Elephant",
+        "primary_category": "Skincare",
+        "secondary_category": "Cleansers",
+        "price_usd": 34.0,
+        "rating": 3.9426,
+        "distance": 0.21801376342773438,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P505120",
+        "brand_name": "Drunk Elephant",
+        "primary_category": "Skincare",
+        "secondary_category": "Value & Gift Sets",
+        "price_usd": 54.0,
+        "rating": 5.0,
+        "distance": 0.21888995170593262,
+        "review_count": 2,
+        "reviews": [
+          {
+            "review_id": "review_49875",
+            "product_id": "P505120",
+            "rating": 5
+          },
+          {
+            "review_id": "review_49874",
+            "product_id": "P505120",
+            "rating": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Q08",
+    "type": "zero_review_products",
+    "query": "Hydrating oil-free gel moisturizer under $30",
+    "latency_seconds": 0.123,
+    "products": [
+      {
+        "product_id": "P500094",
+        "brand_name": "Community Sixty-Six",
+        "primary_category": "Skincare",
+        "secondary_category": "Moisturizers",
+        "price_usd": 25.0,
+        "rating": 4.1245,
+        "distance": 0.1773548126220703,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P474858",
+        "brand_name": "Shani Darden Skin Care",
+        "primary_category": "Skincare",
+        "secondary_category": "Moisturizers",
+        "price_usd": 38.0,
+        "rating": null,
+        "distance": 0.20754432678222656,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P422430",
+        "brand_name": "Lanc\u00f4me",
+        "primary_category": "Skincare",
+        "secondary_category": "Moisturizers",
+        "price_usd": 48.0,
+        "rating": 4.5629,
+        "distance": 0.21464645862579346,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P479125",
+        "brand_name": "Summer Fridays",
+        "primary_category": "Skincare",
+        "secondary_category": "Moisturizers",
+        "price_usd": 17.0,
+        "rating": 4.4613,
+        "distance": 0.21748805046081543,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P427641",
+        "brand_name": "IT Cosmetics",
+        "primary_category": "Skincare",
+        "secondary_category": "Moisturizers",
+        "price_usd": 20.0,
+        "rating": 3.6809,
+        "distance": 0.22110718488693237,
+        "review_count": 47,
+        "reviews": [
+          {
+            "review_id": "review_37079",
+            "product_id": "P427641",
+            "rating": 5
+          },
+          {
+            "review_id": "review_37092",
+            "product_id": "P427641",
+            "rating": 1
+          },
+          {
+            "review_id": "review_37071",
+            "product_id": "P427641",
+            "rating": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Q09",
+    "type": "mixed_reviews",
+    "query": "What do customers say about the Tata Harper Repairative Anti-Aging Moisturizer?",
+    "latency_seconds": 0.259,
+    "products": [
+      {
+        "product_id": "P379709",
+        "brand_name": "Tata Harper",
+        "primary_category": "Skincare",
+        "secondary_category": "Moisturizers",
+        "price_usd": 130.0,
+        "rating": 3.4118,
+        "distance": 0.1885908842086792,
+        "review_count": 136,
+        "reviews": [
+          {
+            "review_id": "review_2354",
+            "product_id": "P379709",
+            "rating": 5
+          },
+          {
+            "review_id": "review_2454",
+            "product_id": "P379709",
+            "rating": 4
+          },
+          {
+            "review_id": "review_2419",
+            "product_id": "P379709",
+            "rating": 3
+          }
+        ]
+      },
+      {
+        "product_id": "P472341",
+        "brand_name": "Tata Harper",
+        "primary_category": "Skincare",
+        "secondary_category": "Moisturizers",
+        "price_usd": 130.0,
+        "rating": 4.58,
+        "distance": 0.2514486312866211,
+        "review_count": 50,
+        "reviews": [
+          {
+            "review_id": "review_36286",
+            "product_id": "P472341",
+            "rating": 5
+          },
+          {
+            "review_id": "review_36261",
+            "product_id": "P472341",
+            "rating": 5
+          },
+          {
+            "review_id": "review_36271",
+            "product_id": "P472341",
+            "rating": 5
+          }
+        ]
+      },
+      {
+        "product_id": "P392001",
+        "brand_name": "Tata Harper",
+        "primary_category": "Bath & Body",
+        "secondary_category": "Body Moisturizers",
+        "price_usd": 120.0,
+        "rating": 3.8421,
+        "distance": 0.25605136156082153,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P458917",
+        "brand_name": "Tata Harper",
+        "primary_category": "Skincare",
+        "secondary_category": "Moisturizers",
+        "price_usd": 68.0,
+        "rating": 4.4461,
+        "distance": 0.2564859986305237,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P412407",
+        "brand_name": "Tata Harper",
+        "primary_category": "Skincare",
+        "secondary_category": "Moisturizers",
+        "price_usd": 130.0,
+        "rating": 3.8519,
+        "distance": 0.2623775005340576,
+        "review_count": 81,
+        "reviews": [
+          {
+            "review_id": "review_24517",
+            "product_id": "P412407",
+            "rating": 4
+          },
+          {
+            "review_id": "review_24448",
+            "product_id": "P412407",
+            "rating": 5
+          },
+          {
+            "review_id": "review_24516",
+            "product_id": "P412407",
+            "rating": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Q10",
+    "type": "no_match",
+    "query": "Tatcha moisturizer under $10",
+    "latency_seconds": 0.119,
+    "products": [
+      {
+        "product_id": "P441101",
+        "brand_name": "Tatcha",
+        "primary_category": "Skincare",
+        "secondary_category": "Moisturizers",
+        "price_usd": 70.0,
+        "rating": 4.1023,
+        "distance": 0.1982715129852295,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P481168",
+        "brand_name": "Tatcha",
+        "primary_category": "Skincare",
+        "secondary_category": "Moisturizers",
+        "price_usd": 22.0,
+        "rating": null,
+        "distance": 0.2029024362564087,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P417867",
+        "brand_name": "Tatcha",
+        "primary_category": "Skincare",
+        "secondary_category": "Moisturizers",
+        "price_usd": 125.0,
+        "rating": 4.1885,
+        "distance": 0.20607495307922363,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P480355",
+        "brand_name": "Tatcha",
+        "primary_category": "Skincare",
+        "secondary_category": "Moisturizers",
+        "price_usd": 110.0,
+        "rating": 5.0,
+        "distance": 0.21185117959976196,
+        "review_count": 3,
+        "reviews": [
+          {
+            "review_id": "review_49776",
+            "product_id": "P480355",
+            "rating": 5
+          },
+          {
+            "review_id": "review_49778",
+            "product_id": "P480355",
+            "rating": 5
+          },
+          {
+            "review_id": "review_49777",
+            "product_id": "P480355",
+            "rating": 5
+          }
+        ]
+      },
+      {
+        "product_id": "P418218",
+        "brand_name": "Tatcha",
+        "primary_category": "Skincare",
+        "secondary_category": "Moisturizers",
+        "price_usd": 70.0,
+        "rating": 4.0245,
+        "distance": 0.21372461318969727,
+        "review_count": 0,
+        "reviews": []
+      }
+    ]
+  },
+  {
+    "id": "Q11",
+    "type": "strict_price",
+    "query": "Face serum under $15",
+    "latency_seconds": 0.059,
+    "products": [
+      {
+        "product_id": "P309504",
+        "brand_name": "Hourglass",
+        "primary_category": "Makeup",
+        "secondary_category": "Face",
+        "price_usd": 65.0,
+        "rating": 4.3622,
+        "distance": 0.23538589477539062,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P455657",
+        "brand_name": "SEPHORA COLLECTION",
+        "primary_category": "Makeup",
+        "secondary_category": "Brushes & Applicators",
+        "price_usd": 20.0,
+        "rating": 4.4878,
+        "distance": 0.23663032054901123,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P504068",
+        "brand_name": "NARS",
+        "primary_category": "Makeup",
+        "secondary_category": "Brushes & Applicators",
+        "price_usd": 34.0,
+        "rating": null,
+        "distance": 0.23985910415649414,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P376090",
+        "brand_name": "Hourglass",
+        "primary_category": "Makeup",
+        "secondary_category": "Brushes & Applicators",
+        "price_usd": 40.0,
+        "rating": 4.4545,
+        "distance": 0.24406373500823975,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P417913",
+        "brand_name": "SEPHORA COLLECTION",
+        "primary_category": "Makeup",
+        "secondary_category": "Brushes & Applicators",
+        "price_usd": 22.0,
+        "rating": 4.7657,
+        "distance": 0.2500342130661011,
+        "review_count": 0,
+        "reviews": []
+      }
+    ]
+  },
+  {
+    "id": "Q12",
+    "type": "no_budget",
+    "query": "Vitamin C serum for brightening",
+    "latency_seconds": 0.123,
+    "products": [
+      {
+        "product_id": "P455235",
+        "brand_name": "Sunday Riley",
+        "primary_category": "Skincare",
+        "secondary_category": "Value & Gift Sets",
+        "price_usd": 130.0,
+        "rating": 4.16,
+        "distance": 0.16848337650299072,
+        "review_count": 26,
+        "reviews": [
+          {
+            "review_id": "review_44135",
+            "product_id": "P455235",
+            "rating": 3
+          },
+          {
+            "review_id": "review_44129",
+            "product_id": "P455235",
+            "rating": 5
+          },
+          {
+            "review_id": "review_44128",
+            "product_id": "P455235",
+            "rating": 5
+          }
+        ]
+      },
+      {
+        "product_id": "P467614",
+        "brand_name": "Dr. Brandt Skincare",
+        "primary_category": "Skincare",
+        "secondary_category": "Treatments",
+        "price_usd": 120.0,
+        "rating": 4.6959,
+        "distance": 0.18336063623428345,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P418346",
+        "brand_name": "Sunday Riley",
+        "primary_category": "Skincare",
+        "secondary_category": "Treatments",
+        "price_usd": 85.0,
+        "rating": 4.1036,
+        "distance": 0.19094574451446533,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P476428",
+        "brand_name": "Hyper Skin",
+        "primary_category": "Skincare",
+        "secondary_category": "Treatments",
+        "price_usd": 58.0,
+        "rating": 4.5664,
+        "distance": 0.1932050585746765,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P500756",
+        "brand_name": "First Aid Beauty",
+        "primary_category": "Skincare",
+        "secondary_category": "Treatments",
+        "price_usd": 50.0,
+        "rating": 4.6781,
+        "distance": 0.1940011978149414,
+        "review_count": 0,
+        "reviews": []
+      }
+    ]
+  },
+  {
+    "id": "Q13",
+    "type": "ambiguous",
+    "query": "I need something nice",
+    "latency_seconds": 0.05,
+    "products": [
+      {
+        "product_id": "P503634",
+        "brand_name": "Glow Recipe",
+        "primary_category": "Skincare",
+        "secondary_category": "Cleansers",
+        "price_usd": 28.0,
+        "rating": 4.4387,
+        "distance": 0.3785262107849121,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P504171",
+        "brand_name": "Glow Recipe",
+        "primary_category": "Skincare",
+        "secondary_category": "Value & Gift Sets",
+        "price_usd": 34.0,
+        "rating": 4.6339,
+        "distance": 0.3785262107849121,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P433173",
+        "brand_name": "Olaplex",
+        "primary_category": "Hair",
+        "secondary_category": "Shampoo & Conditioner",
+        "price_usd": 30.0,
+        "rating": 4.0582,
+        "distance": 0.37883496284484863,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P470529",
+        "brand_name": "Glow Recipe",
+        "primary_category": "Skincare",
+        "secondary_category": "Treatments",
+        "price_usd": 45.0,
+        "rating": 4.471,
+        "distance": 0.38227927684783936,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P503902",
+        "brand_name": "JLo Beauty",
+        "primary_category": "Bath & Body",
+        "secondary_category": "Body Moisturizers",
+        "price_usd": 60.0,
+        "rating": 3.9221,
+        "distance": 0.38606369495391846,
+        "review_count": 0,
+        "reviews": []
+      }
+    ]
+  },
+  {
+    "id": "Q14",
+    "type": "comparison",
+    "query": "Compare La Mer The Moisturizing Cool Gel Cream and Tata Harper Repairative Anti-Aging Moisturizer",
+    "latency_seconds": 0.289,
+    "products": [
+      {
+        "product_id": "P379709",
+        "brand_name": "Tata Harper",
+        "primary_category": "Skincare",
+        "secondary_category": "Moisturizers",
+        "price_usd": 130.0,
+        "rating": 3.4118,
+        "distance": 0.23319309949874878,
+        "review_count": 136,
+        "reviews": [
+          {
+            "review_id": "review_2398",
+            "product_id": "P379709",
+            "rating": 5
+          },
+          {
+            "review_id": "review_2383",
+            "product_id": "P379709",
+            "rating": 3
+          },
+          {
+            "review_id": "review_2416",
+            "product_id": "P379709",
+            "rating": 5
+          }
+        ]
+      },
+      {
+        "product_id": "P429637",
+        "brand_name": "La Mer",
+        "primary_category": "Skincare",
+        "secondary_category": "Moisturizers",
+        "price_usd": 200.0,
+        "rating": 3.6788,
+        "distance": 0.2527666687965393,
+        "review_count": 137,
+        "reviews": [
+          {
+            "review_id": "review_1411",
+            "product_id": "P429637",
+            "rating": 5
+          },
+          {
+            "review_id": "review_1471",
+            "product_id": "P429637",
+            "rating": 2
+          },
+          {
+            "review_id": "review_1410",
+            "product_id": "P429637",
+            "rating": 5
+          }
+        ]
+      },
+      {
+        "product_id": "P480613",
+        "brand_name": "La Mer",
+        "primary_category": "Skincare",
+        "secondary_category": "Moisturizers",
+        "price_usd": 180.0,
+        "rating": 4.6439,
+        "distance": 0.2767491340637207,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P430405",
+        "brand_name": "La Mer",
+        "primary_category": "Skincare",
+        "secondary_category": "Mini Size",
+        "price_usd": 100.0,
+        "rating": 4.3,
+        "distance": 0.28488391637802124,
+        "review_count": 10,
+        "reviews": [
+          {
+            "review_id": "review_48481",
+            "product_id": "P430405",
+            "rating": 5
+          },
+          {
+            "review_id": "review_48480",
+            "product_id": "P430405",
+            "rating": 5
+          },
+          {
+            "review_id": "review_48486",
+            "product_id": "P430405",
+            "rating": 5
+          }
+        ]
+      },
+      {
+        "product_id": "P472341",
+        "brand_name": "Tata Harper",
+        "primary_category": "Skincare",
+        "secondary_category": "Moisturizers",
+        "price_usd": 130.0,
+        "rating": 4.58,
+        "distance": 0.29037415981292725,
+        "review_count": 50,
+        "reviews": [
+          {
+            "review_id": "review_36260",
+            "product_id": "P472341",
+            "rating": 5
+          },
+          {
+            "review_id": "review_36292",
+            "product_id": "P472341",
+            "rating": 5
+          },
+          {
+            "review_id": "review_36286",
+            "product_id": "P472341",
+            "rating": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Q15",
+    "type": "ingredient",
+    "query": "Serum with hyaluronic acid",
+    "latency_seconds": 0.099,
+    "products": [
+      {
+        "product_id": "P443845",
+        "brand_name": "The INKEY List",
+        "primary_category": "Skincare",
+        "secondary_category": "Treatments",
+        "price_usd": 9.99,
+        "rating": 4.4073,
+        "distance": 0.24294590950012207,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P500746",
+        "brand_name": "First Aid Beauty",
+        "primary_category": "Skincare",
+        "secondary_category": "Treatments",
+        "price_usd": 40.0,
+        "rating": 4.5727,
+        "distance": 0.24549967050552368,
+        "review_count": 112,
+        "reviews": [
+          {
+            "review_id": "review_12821",
+            "product_id": "P500746",
+            "rating": 5
+          },
+          {
+            "review_id": "review_12794",
+            "product_id": "P500746",
+            "rating": 4
+          },
+          {
+            "review_id": "review_12814",
+            "product_id": "P500746",
+            "rating": 4
+          }
+        ]
+      },
+      {
+        "product_id": "P427419",
+        "brand_name": "The Ordinary",
+        "primary_category": "Skincare",
+        "secondary_category": "Treatments",
+        "price_usd": 15.7,
+        "rating": 4.2133,
+        "distance": 0.24565744400024414,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P447212",
+        "brand_name": "Dr. Barbara Sturm",
+        "primary_category": "Skincare",
+        "secondary_category": "Treatments",
+        "price_usd": 320.0,
+        "rating": 3.9386,
+        "distance": 0.2546842098236084,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P471025",
+        "brand_name": "Farmacy",
+        "primary_category": "Skincare",
+        "secondary_category": "Treatments",
+        "price_usd": 48.0,
+        "rating": 4.3191,
+        "distance": 0.2549358606338501,
+        "review_count": 0,
+        "reviews": []
+      }
+    ]
+  },
+  {
+    "id": "Q16",
+    "type": "extra_retrieval",
+    "query": "Vegan mascara",
+    "latency_seconds": 0.061,
+    "products": [
+      {
+        "product_id": "P482077",
+        "brand_name": "Urban Decay",
+        "primary_category": "Makeup",
+        "secondary_category": "Eye",
+        "price_usd": 28.0,
+        "rating": 4.2784,
+        "distance": 0.18592989444732666,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P472179",
+        "brand_name": "NUDESTIX",
+        "primary_category": "Makeup",
+        "secondary_category": "Eye",
+        "price_usd": 28.0,
+        "rating": 4.3254,
+        "distance": 0.19462239742279053,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P500474",
+        "brand_name": "Urban Decay",
+        "primary_category": "Mini Size",
+        "secondary_category": "Makeup",
+        "price_usd": 16.0,
+        "rating": 3.0,
+        "distance": 0.19501757621765137,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P456014",
+        "brand_name": "SEPHORA COLLECTION",
+        "primary_category": "Makeup",
+        "secondary_category": "Eye",
+        "price_usd": 10.0,
+        "rating": 4.475,
+        "distance": 0.19604671001434326,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P468423",
+        "brand_name": "Velour Lashes",
+        "primary_category": "Makeup",
+        "secondary_category": "Eye",
+        "price_usd": 27.0,
+        "rating": 4.8123,
+        "distance": 0.21141445636749268,
+        "review_count": 0,
+        "reviews": []
+      }
+    ]
+  },
+  {
+    "id": "Q17",
+    "type": "extra_retrieval",
+    "query": "Hair oil for frizz",
+    "latency_seconds": 0.057,
+    "products": [
+      {
+        "product_id": "P474027",
+        "brand_name": "Briogeo",
+        "primary_category": "Hair",
+        "secondary_category": "Value & Gift Sets",
+        "price_usd": 30.0,
+        "rating": 2.2857,
+        "distance": 0.20204651355743408,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P479990",
+        "brand_name": "Sol de Janeiro",
+        "primary_category": "Hair",
+        "secondary_category": "Hair Styling & Treatments",
+        "price_usd": 34.0,
+        "rating": 4.0191,
+        "distance": 0.20206928253173828,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P448864",
+        "brand_name": "Virtue",
+        "primary_category": "Hair",
+        "secondary_category": "Hair Styling & Treatments",
+        "price_usd": 44.0,
+        "rating": 4.6701,
+        "distance": 0.2034703493118286,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P500310",
+        "brand_name": "Virtue",
+        "primary_category": "Hair",
+        "secondary_category": "Hair Styling & Treatments",
+        "price_usd": 44.0,
+        "rating": 4.675,
+        "distance": 0.20418071746826172,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P448445",
+        "brand_name": "K\u00e9rastase",
+        "primary_category": "Hair",
+        "secondary_category": "Hair Styling & Treatments",
+        "price_usd": 45.0,
+        "rating": 4.1628,
+        "distance": 0.2093653678894043,
+        "review_count": 0,
+        "reviews": []
+      }
+    ]
+  },
+  {
+    "id": "Q18",
+    "type": "extra_retrieval",
+    "query": "Body lotion for very dry skin",
+    "latency_seconds": 0.048,
+    "products": [
+      {
+        "product_id": "P456217",
+        "brand_name": "Prima",
+        "primary_category": "Bath & Body",
+        "secondary_category": "Body Moisturizers",
+        "price_usd": 32.0,
+        "rating": 3.7857,
+        "distance": 0.20099735260009766,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P476750",
+        "brand_name": "Verb",
+        "primary_category": "Bath & Body",
+        "secondary_category": "Body Moisturizers",
+        "price_usd": 20.0,
+        "rating": 4.5638,
+        "distance": 0.2382643222808838,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P469450",
+        "brand_name": "Clarins",
+        "primary_category": "Bath & Body",
+        "secondary_category": "Body Moisturizers",
+        "price_usd": 47.0,
+        "rating": 4.7143,
+        "distance": 0.2407548427581787,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P459138",
+        "brand_name": "N\u00e9cessaire",
+        "primary_category": "Bath & Body",
+        "secondary_category": "Body Moisturizers",
+        "price_usd": 28.0,
+        "rating": 4.6814,
+        "distance": 0.244051992893219,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P474829",
+        "brand_name": "First Aid Beauty",
+        "primary_category": "Bath & Body",
+        "secondary_category": "Body Moisturizers",
+        "price_usd": 34.0,
+        "rating": 3.9697,
+        "distance": 0.24471962451934814,
+        "review_count": 0,
+        "reviews": []
+      }
+    ]
+  },
+  {
+    "id": "Q19",
+    "type": "extra_retrieval",
+    "query": "Long-lasting matte lipstick",
+    "latency_seconds": 0.058,
+    "products": [
+      {
+        "product_id": "P409317",
+        "brand_name": "Smashbox",
+        "primary_category": "Makeup",
+        "secondary_category": "Lip",
+        "price_usd": 27.0,
+        "rating": 4.2422,
+        "distance": 0.17235243320465088,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P454512",
+        "brand_name": "Smashbox",
+        "primary_category": "Makeup",
+        "secondary_category": "Lip",
+        "price_usd": 27.0,
+        "rating": 4.4956,
+        "distance": 0.20034891366958618,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P407636",
+        "brand_name": "Too Faced",
+        "primary_category": "Makeup",
+        "secondary_category": "Lip",
+        "price_usd": 26.0,
+        "rating": 4.1661,
+        "distance": 0.20620745420455933,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P460716",
+        "brand_name": "SEPHORA COLLECTION",
+        "primary_category": "Makeup",
+        "secondary_category": "Lip",
+        "price_usd": 15.0,
+        "rating": 3.5059,
+        "distance": 0.20703768730163574,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P500992",
+        "brand_name": "MAKE UP FOR EVER",
+        "primary_category": "Makeup",
+        "secondary_category": "Lip",
+        "price_usd": 25.0,
+        "rating": 4.1005,
+        "distance": 0.20929622650146484,
+        "review_count": 0,
+        "reviews": []
+      }
+    ]
+  },
+  {
+    "id": "Q20",
+    "type": "extra_retrieval",
+    "query": "Gentle cleanser for sensitive skin",
+    "latency_seconds": 0.12,
+    "products": [
+      {
+        "product_id": "P296413",
+        "brand_name": "Algenist",
+        "primary_category": "Skincare",
+        "secondary_category": "Cleansers",
+        "price_usd": 28.0,
+        "rating": 4.2689,
+        "distance": 0.24928325414657593,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P450633",
+        "brand_name": "Sulwhasoo",
+        "primary_category": "Skincare",
+        "secondary_category": "Cleansers",
+        "price_usd": 40.0,
+        "rating": 4.4532,
+        "distance": 0.25331270694732666,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P427536",
+        "brand_name": "Tatcha",
+        "primary_category": "Skincare",
+        "secondary_category": "Cleansers",
+        "price_usd": 40.0,
+        "rating": 4.1478,
+        "distance": 0.2589602470397949,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P232902",
+        "brand_name": "Kate Somerville",
+        "primary_category": "Skincare",
+        "secondary_category": "Cleansers",
+        "price_usd": 44.0,
+        "rating": 4.1909,
+        "distance": 0.2593573331832886,
+        "review_count": 0,
+        "reviews": []
+      },
+      {
+        "product_id": "P469448",
+        "brand_name": "Clarins",
+        "primary_category": "Skincare",
+        "secondary_category": "Cleansers",
+        "price_usd": 30.0,
+        "rating": 2.5294,
+        "distance": 0.2607027292251587,
+        "review_count": 17,
+        "reviews": [
+          {
+            "review_id": "review_46679",
+            "product_id": "P469448",
+            "rating": 5
+          },
+          {
+            "review_id": "review_46675",
+            "product_id": "P469448",
+            "rating": 5
+          },
+          {
+            "review_id": "review_46686",
+            "product_id": "P469448",
+            "rating": 4
+          }
+        ]
+      }
+    ]
+  }
+]

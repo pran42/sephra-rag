@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sephra"
+version = "0.1.0"
+description = "Hybrid RAG beauty-product discovery over a static Sephora dataset snapshot"
+requires-python = ">=3.11"
+
+# Only the runtime package lives in src/sephra. The older one-off pipeline
+# scripts in src/ (clean_data.py, build_vector_db.py, ...) are not packaged.
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["sephra*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = [
+    "integration: reads the real ChromaDB / embedding model (read-only, slower)",
+]
+filterwarnings = ["ignore::DeprecationWarning"]

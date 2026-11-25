@@ -1,0 +1,162 @@
+Loading embedding model...
+Connecting to ChromaDB...
+Product vectors: 10634
+Review vectors: 50013
+Loading original documents...
+Original products: 8494
+Original reviews: 49918
+Review counts loaded: 8494
+
+Searching products...
+
+========== SEPHRA RECOMMENDATIONS ==========
+
+============================================================
+PRODUCT 1
+============================================================
+Product ID: P411403
+Product information:
+Product: Confidence in a Cream Anti-Aging Hydrating Moisturizer
+Brand: IT Cosmetics
+Category: Skincare
+Subcategory: Moisturizers
+Price (USD): 20.0
+Rating: 4.62
+Ingredients: ['Aqua / Water / Eau, Glycerin, Niacinamide, Cetearyl Alcohol, Squalane, Hydroxyethylpiperazine Ethane Sulfonic Acid, Glyceryl Stearate, Dimethicone, Butyrospermum Parkii Butter / Shea Butter, Myristyl Myristate, Ethylhexyl Palmitate, Phenoxyethanol, Peg-100 Stearate, Caprylic/Capric Triglyceride, Caprylyl Glycol, Pentylene Glycol, Sodium Polyacrylate, Tocopherol, Hydrolyzed Rice Protein, Citric Acid, Sodium Hyaluronate, Pentaerythrityl Tetra-Di-T-Butyl Hydroxyhydrocinnamate, Ceramide Np, Adenosine, Trisodium Ethylenediamine Disuccinate, Colloidal Oatmeal, Linalool, Hydroxypalmitoyl Sphinganine, Butylene Glycol, Caramel, Limonene, Benzyl Benzoate, Carbomer, Sodium Lactate, Citral, Polysorbate 20, Palmitoyl Tripeptide-1, Palmitoyl Tetrapeptide-7, Parfum / Fragrance.']
+Highlights: ['Vegan', 'Hyaluronic Acid', 'Good for: Loss of firmness', 'Good for: Anti-Aging', 'Without Parabens', 'Best for Dry, Combo, Normal Skin']
+
+Available reviews in loaded dataset: 0
+No relevant customer reviews retrieved.
+No reviews available in our loaded dataset.
+
+============================================================
+PRODUCT 2
+============================================================
+Product ID: P500094
+Product information:
+Product: Hydrating Oil-Free Gel Moisturizer
+Brand: Community Sixty-Six
+Category: Skincare
+Subcategory: Moisturizers
+Price (USD): 25.0
+Rating: 4.1245
+Ingredients: ['Water (Aqua), Butylene Glycol, Squalane, Glycereth-7 Triacetate, Coco-Caprylate/Caprate, Niacinamide, Glycerin, Triheptanoin, Sodium Polyacrylate, C9-12 Alkane, Glyceryl Caprylate, Ethylhexyl Stearate, Polyurethane-100, Polysorbate 20, Tromethamine, Ammonium Acryloyldimethyltaurate/VP Copolymer, Decyl Glucoside, Panthenol, Sodium Hyaluronate, Lactic Acid, Glyceryl Undecylenate, Trideceth-6, Propanediol, Citric Acid, 1,2-Hexanediol, C11-15-Isoalkanes, Oryza Sativa (Rice) Bran Extract, Oryza Sativa (Rice) Hull Extract, Spinacia Oleracea (Spinach) Leaf Extract, Hydroxyacetophenone, Caprylyl Glycol, Ipomoea Batatas RootExtract, Sodium Benzoate, Polyglutamic Acid, Camellia Sinensis Leaf Extract, Ferulic Acid, Lactobacillus Ferment Lysate, Saccharomyces Lysate.']
+Highlights: ['Hyaluronic Acid', 'Hydrating', 'Clean at Sephora', 'Fragrance Free', 'Best for Dry, Combo, Normal Skin', 'Cruelty-Free']
+
+Available reviews in loaded dataset: 0
+No relevant customer reviews retrieved.
+No reviews available in our loaded dataset.
+
+============================================================
+PRODUCT 3
+============================================================
+Product ID: P427641
+Product information:
+Product: Mini Confidence in a Cream Hydrating Moisturizer
+Brand: IT Cosmetics
+Category: Skincare
+Subcategory: Moisturizers
+Price (USD): 20.0
+Rating: 3.6809
+Ingredients: ['Aqua / Water / Eau, Glycerin, Niacinamide, Cetearyl Alcohol, Squalane, Hydroxyethylpiperazine Ethane Sulfonic Acid, Glyceryl Stearate, Dimethicone, Butyrospermum Parkii Butter / Shea Butter, Myristyl Myristate, Ethylhexyl Palmitate, Phenoxyethanol, Peg-100 Stearate, Caprylic/Capric Triglyceride, Caprylyl Glycol, Pentylene Glycol, Sodium Polyacrylate, Tocopherol, Hydrolyzed Rice Protein, Citric Acid, Sodium Hyaluronate, Pentaerythrityl Tetra-Di-T-Butyl Hydroxyhydrocinnamate, Ceramide Np, Adenosine, Trisodium Ethylenediamine Disuccinate, Colloidal Oatmeal, Linalool, Hydroxypalmitoyl Sphinganine, Butylene Glycol, Caramel, Limonene, Benzyl Benzoate, Carbomer, Sodium Lactate, Citral, Polysorbate 20, Palmitoyl Tripeptide-1, Palmitoyl Tetrapeptide-7, Parfum / Fragrance.']
+Highlights: ['Vegan', 'Hyaluronic Acid', 'Good for: Loss of firmness', 'Good for: Anti-Aging', 'Without Parabens', 'Best for Dry, Combo, Normal Skin']
+
+Available reviews in loaded dataset: 47
+
+Relevant customer reviews:
+
+Review 1
+Review: Product: Mini Confidence in a Cream Hydrating Moisturizer
+Brand: IT Cosmetics
+Category: Skincare
+Rating: 5
+Skin Type: dry
+Review: Smooth as Silk. This stuff is wonderful. I’m a tad aged so my skin is pretty dry and this stuff makes my face feel like a new born baby. I wake to velvet skin. Really love it. Got it as a sample at the “buy something you don’t need” waiting in line area. Finally something I can actually use!
+Metadata: {'product_id': 'P427641', 'brand_name': 'IT Cosmetics', 'primary_category': 'Skincare', 'rating': 5, 'skin_type': 'dry', 'is_recommended': 1.0}
+Distance: 0.23762303590774536
+
+Review 2
+Review: Product: Mini Confidence in a Cream Hydrating Moisturizer
+Brand: IT Cosmetics
+Category: Skincare
+Rating: 5
+Skin Type: dry
+Review: BEST EVER!!. This is the BEST moisturizer ever! I’ve been using it for myself and just bought this for my 83 year old mother. She’s going to love it! Get this, you will not be disappointed! And for this price, it’s a lot of confidence.
+Metadata: {'product_id': 'P427641', 'brand_name': 'IT Cosmetics', 'primary_category': 'Skincare', 'rating': 5, 'skin_type': 'dry', 'is_recommended': 1.0}
+Distance: 0.2386852502822876
+
+Review 3
+Review: Product: Mini Confidence in a Cream Hydrating Moisturizer
+Brand: IT Cosmetics
+Category: Skincare
+Rating: 1
+Skin Type: dry
+Review: Yuck. Terrible scent (lemon-ish household cleanser) and weird texture. It’s thick but not rich. It doesn’t seem to moisturize my dry skin well at all and left it feeling tacky, sticky and smelly. I’m genuinely surprised at all the rave reviews I’ve seen for this. I personally hated it.
+Metadata: {'product_id': 'P427641', 'brand_name': 'IT Cosmetics', 'primary_category': 'Skincare', 'rating': 1, 'skin_type': 'dry', 'is_recommended': 0.0}
+Distance: 0.24174702167510986
+
+============================================================
+PRODUCT 4
+============================================================
+Product ID: P441101
+Product information:
+Product: The Dewy Skin Cream Plumping & Hydrating Moisturizer
+Brand: Tatcha
+Category: Skincare
+Subcategory: Moisturizers
+Price (USD): 70.0
+Rating: 4.1023
+Ingredients: ['Aqua/Water/Eau, Saccharomyces/Rice Ferment Filtrate, Glycerin, Propanediol, Dimethicone, Squalane, Diisostearyl Malate, Behenyl Alcohol, Myristyl Myristate, Dipentaerythrityl Hexahydroxystearate, Bis-Diglyceryl Polyacyladipate-2, Tridecyl Trimellitate, Inositol, Sorbitan Tristearate, Beheneth-20, Camellia Sinensis Leaf Extract, Cladosiphon Okamuranus Extract, Chondrus Crispus Extract, Betaphycus Gelatinum Extract, Oryza Sativa (Rice) Bran Extract, Panax Ginseng Root Extract, Origanum Majorana Leaf Extract, Thymus Serpyllum Extract, Malva Sylvestris (Mallow) Flower Extract, Sodium Hyaluronate, Gold, Sericin, Phytosteryl Macadamiate, Tocopherol, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Sorbitan Isostearate, Polysorbate 60, Butylene Glycol, Dimethicone/Vinyl Dimethicone Crosspolymer, Sodium Benzoate, Gluconolactone, Ethylhexylglycerin, Parfum/Fragrance, Alcohol, Phenoxyethanol, Citral, Limonene, Linalool, Mica, Tin Oxide, Titanium Dioxide (Ci 77891), Violet 2 (Ci 60725)']
+Highlights: ['Hyaluronic Acid', 'Community Favorite', 'Plumping', 'Hydrating', 'Clean at Sephora', 'Good for: Dryness']
+
+Available reviews in loaded dataset: 0
+No relevant customer reviews retrieved.
+No reviews available in our loaded dataset.
+
+============================================================
+PRODUCT 5
+============================================================
+Product ID: P500120
+Product information:
+Product: Nourishing Rich Moisturizer with Hyaluronic Acid
+Brand: Community Sixty-Six
+Category: Skincare
+Subcategory: Moisturizers
+Price (USD): 25.0
+Rating: 3.5
+Ingredients: ['Water (Aqua), Butylene Glycol, Coco-Caprylate/Caprate, Glyceryl Stearate SE, Squalane, Triheptanoin, Glycereth-7 Triacetate, Polyglyceryl-3 Diisostearate, Sodium Stearoyl Glutamate, Glycerin, Cetearyl Alcohol, Polyurethane-100, C9-12 Alkane, Glyceryl Caprylate, Tromethamine, Polysorbate 20, Butyrospermum Parkii (Shea) Butter, Carbomer, Panthenol, Sucrose, Acrylamide/Sodium Acryloyldimethyltaurate Copolymer, C12-15 Alkyl Benzoate, Tocopheryl Acetate, Isohexadecane, Decyl Glucoside, Glyceryl Undecylenate, Sodium Hyaluronate, Spinacia Oleracea (Spinach) Leaf Extract, Tetrahexyldecyl Ascorbate, Hydroxyethylcellulose, 1,2-Hexanediol, Polysorbate 80, Oryza Sativa (Rice) Hull Extract, Hydroxyacetophenone, Ubiquinone, Sorbitan Oleate, Sodium Benzoate, Caprylyl Glycol, Aphanizomenon Flos-Aquae Extract, Ipomoea Batatas Root Extract, Wine Extract, Lactobacillus Ferment Lysate, Saccharomyces Lysate, Akebia Quinata Stem Extract, Camellia Sinensis Leaf Extract, Disodium Phosphate, Polysorbate 60, Citric Acid, Sodium Phosphate.']
+Highlights: ['Hyaluronic Acid', 'Best for Dry Skin', 'Clean at Sephora', 'Good for: Anti-Aging', 'Fragrance Free', 'Cruelty-Free']
+
+Available reviews in loaded dataset: 10
+
+Relevant customer reviews:
+
+Review 1
+Review: Product: Nourishing Rich Moisturizer with Hyaluronic Acid
+Brand: Community Sixty-Six
+Category: Skincare
+Rating: 5
+Skin Type: dry
+Review: The best for super dry skin. I have very dry skin and this is the only moisturizer that truly makes my skin feel hydrated, and doesn’t leave a white cast or pill off. It feels great under my SPF and Makeup. I also use it at night under my Night Cream to give myself that extra boost of hydration. The packaging with the little pump is also super cute and way more sanitary than your average jar!
+Metadata: {'product_id': 'P500120', 'brand_name': 'Community Sixty-Six', 'primary_category': 'Skincare', 'rating': 5, 'skin_type': 'dry', 'is_recommended': 1.0}
+Distance: 0.25217950344085693
+
+Review 2
+Review: Product: Nourishing Rich Moisturizer with Hyaluronic Acid
+Brand: Community Sixty-Six
+Category: Skincare
+Rating: 5
+Skin Type: combination
+Review: perfect dry skin daytime moisturizer. like some of the other reviews say, it is tacky and takes a minute to blend into the skin. however, that makes it the perfect daytime moisturizer for dry skin. great under makeup and keeps my skin looking nice all day
+Metadata: {'product_id': 'P500120', 'brand_name': 'Community Sixty-Six', 'primary_category': 'Skincare', 'rating': 5, 'skin_type': 'combination', 'is_recommended': 1.0}
+Distance: 0.25976479053497314
+
+Review 3
+Review: Product: Nourishing Rich Moisturizer with Hyaluronic Acid
+Brand: Community Sixty-Six
+Category: Skincare
+Rating: 4
+Skin Type: dry
+Review: Nice texture, but smells!. The product is very moisturizing for my dry skin while staying lightweight. The texture is nice once it sinks in, and the packaging is very cute. It smells like glue. The smell goes away after a while, but it is hard to get past at first.
+Metadata: {'product_id': 'P500120', 'brand_name': 'Community Sixty-Six', 'primary_category': 'Skincare', 'rating': 4, 'skin_type': 'dry', 'is_recommended': 1.0}
+Distance: 0.27034664154052734
