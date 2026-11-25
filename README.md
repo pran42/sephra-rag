@@ -23,8 +23,7 @@ product, both positive and critical.
 | Rule-based query parser (no-API fallback) | ✅ |
 | LLM query parser (ERNIE 5.5 Flash via OpenRouter, free) + guards + merge with rules | ✅ |
 | Grounded LLM answers with automatic grounding check (withheld if ungrounded) | ✅ |
-| Evaluation pipeline + report | ✅ |
-| Grounded LLM answers with automatic grounding check (withheld if ungrounded) | ✅ |
+| Evaluation pipeline (P@K, nDCG, MRR, recall) + RAGAS + report | ✅ |
 | Streamlit UI (chat + product browser, LLM on/off toggle) | ✅ |
 
 ## Architecture
@@ -113,8 +112,32 @@ docs/                  technical_decisions.md, evaluation_report.md
 | No-result / review-question / comparison handled | 0/3 | **3/3** |
 | Mean query latency (warm, CPU) | 0.12 s | 0.12 s |
 
-The labels are transparent rule-based rubrics, not human judgements. Read
-the report's limitations section before quoting these numbers.
+### RAGAS evaluation
+
+`python -m sephra.evaluation.evaluate_ragas` (add `--llm` for the LLM-judged metrics)
+
+| Retrieval (RAGAS ID-based) | Original system | Sephra (hybrid) |
+|---|---|---|
+| Context precision | 0.65 | **1.00** |
+| Context precision (highly relevant only) | 0.62 | **0.86** |
+| Named-product precision / recall | 0.30 / 1.00 | **1.00 / 1.00** |
+| Review attribution precision (86 reviews) | n/a | **1.00** |
+
+| Generation (RAGAS, LLM-judged) | Score |
+|---|---|
+| Faithfulness (claims supported by retrieved context) | **0.99** (8 answers) |
+| Answer relevancy | **0.88** (7 answers) |
+
+The RAGAS retrieval scores match the project's own metric code. The
+generation scores are indicative only, for two reasons:
+- The free-tier daily cap limited how many answers were scored.
+- The judge is the same model that wrote the answers.
+
+All 32 generated answers also passed the project's own grounding check.
+
+The relevance labels are transparent rule-based rubrics, not human
+judgements. Read the report's limitations section before quoting these
+numbers.
 
 ## Known limitations
 
